@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>httpie-desktop</id>
-    <version>2023.1.0</version>
+    <version>2023.1.2</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/httpie-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->
@@ -13,7 +13,7 @@
     <title>HTTPie for Desktop</title>
     <authors>Jakub Roztocil</authors>
     <projectUrl>https://httpie.io/product</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/tree/main/icons/httpie-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/httpie-desktop.png</iconUrl>
     <copyright>HTTPie © 2012-23</copyright>
     <licenseUrl>https://github.com/httpie/httpie/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
