@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>geogebra-classic.install</id>
-    <version>6.0.752.0</version>
+    <version>6.0.760.0</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic//geogebra-classic.install</packageSourceUrl>
     <owners>gfe, overage</owners>
     <!-- ============================== -->
