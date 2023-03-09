@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>pymca</id>
-    <version>5.8.0</version>
+    <version>5.8.1</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/pymca</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
@@ -23,7 +23,6 @@
     <tags>pymca Fluorescence X-ray Toolkit</tags>
     <summary>PyMca X-ray Fluorescence Toolkit</summary>
     <description><![CDATA[## PyMca X-ray Fluorescence Toolkit
-
 
 PyMca has been developed by the Software Group of the European Synchrotron Radiation Facility (ESRF). If you are in doubt about how to pronounce it, just think about how you would spell  πMCA.
 
