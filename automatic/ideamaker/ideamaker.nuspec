@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ideamaker</id>
+    <version>4.3.1.6452</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ideamaker</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>ideaMaker</title>
+    <authors>Raise 3D Technologies, Inc.</authors>
+    <projectUrl>https://www.raise3d.com/ideamaker/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/ideamaker.png</iconUrl>
+    <copyright>2009-2023</copyright>
+    <licenseUrl>https://www.raise3d.com/legal/raise3d-software-firmware-license-agreement/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://support.raise3d.com/tree.html?cid=15</docsUrl>
+    <tags>ideamaker printing 3D slicer</tags>
+    <summary>Prepare files for printing with Raise3D’s unique 3D slicer software</summary>
+    <description><![CDATA[## Overview
+
+Prepare files for printing with ideaMaker, Raise3D’s powerful slicing software. The user-friendly interface can prepare STL, OBJ, 3MF and OLTP files within 2 clicks, while defined settings provide limitless customization for all users. After the file slicing, users can directly send print files to RaiseCloud to manage and monitor the printing process under one click.
+
+Slicing with ideaMaker is fast, efficient, and completely free.
+
+## Other Features
+- Natively-compiled, multi-threaded, 64-bit, high-efficiency slicing engine for even faster slicing speeds
+- Automate the separation of parts in assemblies
+- Comprehensive repair features for repairing poor-quality models
+- Custom supports/ Generate automatic support structures
+- Adaptive layer height, modifiers, sequential printing
+- Sequential printing-get better looking prints-faster
+- Manage multiple printing profiles to easily switch between different print settings
+- View cross-sections of models
+- Auto-layout for multiple files in one print job
+- User-friendly interface, within 2 clicks to make a print
+- Compatible with most FFF 3D printers
+- Remote monitoring and print job management
+- Input 3MF/OBJ/STL, output GCODE
+- Multi-Language interface: English, German, French, Italian, Russian, Polish, Japanese, Korea, and- Chinese, etc.
+
+]]></description>
+    <dependencies>
+      <dependency id="vcredist2008" version="9.0.30729.6163" />
+    </dependencies>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
