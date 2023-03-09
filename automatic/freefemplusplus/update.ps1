@@ -1,6 +1,6 @@
 Import-Module AU
 
-$latestrelease = 'https://github.com/FreeFem/FreeFem-sources/releases/latest'
+$releases = 'https://api.github.com/repos/FreeFem/FreeFem-sources/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -13,17 +13,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $latestrelease -UseBasicParsing
-    $regex = 'FreeFEM-.*-win64\.exe$'
-    $url = ($download_page.Links | Where-Object href -match $regex | Select-Object -First 1 -ExpandProperty href) -split '/', 5 | Select-Object -Last 1
-    
-    $url -match '\/v(?<version>.*)\/'
-    $version = $Matches.version -replace '-', '.'
+    $latest_asset = (Invoke-RestMethod -Uri $releases).assets
 
-    $releases = $latestrelease.Substring(0, $latestrelease.LastIndexOf('/'))
+    $regex = 'FreeFEM-.*-win64\.exe$'
+    $url = $latest_asset | Where-Object browser_download_url -match $regex | Select-Object -First 1 -ExpandProperty browser_download_url
+    $version = Get-Version $url
+
     return @{
         Version = $version
-        URL64   = "$releases/$url"
+        URL64   = $url
     }
 
 }
