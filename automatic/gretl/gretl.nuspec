@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>gretl</id>
+    <version>2022.221101</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gretl</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Gretl</title>
+    <authors>Allin Cottrell, Riccardo Lucchetti</authors>
+    <projectUrl>http://gretl.sourceforge.net/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/gretl.png</iconUrl>
+    <projectSourceUrl>https://sourceforge.net/p/gretl/git</projectSourceUrl>
+    <docsUrl>http://gretl.sourceforge.net/gretl-help/cmdref.html</docsUrl>
+    <mailingListUrl>http://gretl.sourceforge.net/lists.html</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/gretl/bugs/</bugTrackerUrl>
+    <tags>gretl econometric analysis</tags>
+    <summary>Gretl is an econometrics package, including a shared library, a command-line client program and agraphical user interface.</summary>
+    <description><![CDATA[Gretl Is a cross-platform software package for econometric analysis, written in the C programming language.
+
+It is free, open-source software. You may redistribute it and/or modify it under the terms of the GNU General Public License (GPL) as published by the Free Software Foundation.
+]]></description>
+    <releaseNotes>http://gretl.sourceforge.net/ChangeLog.html</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
