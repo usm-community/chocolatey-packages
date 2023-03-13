@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>freefemplusplus</id>
-    <version>4.11</version>
+    <version>4.12</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/freefemplusplus</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
