@@ -4,3 +4,4 @@
 *.msi
 *.dll
 *.zip
+.DS_Store
