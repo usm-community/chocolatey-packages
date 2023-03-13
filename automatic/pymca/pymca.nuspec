@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>pymca</id>
+    <version>5.8.1</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/pymca</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>PyMca</title>
+    <authors>V.A. Solé - ESRF Software Group</authors>
+    <projectUrl>http://pymca.sourceforge.net</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/pymca.png</iconUrl>
+    <licenseUrl>http://pymca.sourceforge.net/license.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/vasole/pymca</projectSourceUrl>
+    <docsUrl>http://pymca.sourceforge.net/documentation.html</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/pymca/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/vasole/pymca/issues</bugTrackerUrl>
+    <tags>pymca Fluorescence X-ray Toolkit</tags>
+    <summary>PyMca X-ray Fluorescence Toolkit</summary>
+    <description><![CDATA[## PyMca X-ray Fluorescence Toolkit
+
+PyMca has been developed by the Software Group of the European Synchrotron Radiation Facility (ESRF). If you are in doubt about how to pronounce it, just think about how you would spell  πMCA.
+
+For the end user, PyMca is a ready to use, and in many aspects state-of-the-art, set of applications implementing most of the needs of X-ray fluorescence data analysis.
+
+For the developer, the PyMca Toolkit is a collection of Python tools for visualization and analysis of energy-dispersive X-ray fluorescence data. It builds its graphic interface and plotting routines on top of the C++ library Qt through its Python binding PyQt or PySide. Nevertheless, the data analysis routines can be used independently of any graphical interface.
+
+In addition to data files, PyMca can also access SPEC shared memory to monitor data acquisitions. 
+]]></description>
+    <releaseNotes>https://github.com/vasole/pymca/blob/master/changelog.txt</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
