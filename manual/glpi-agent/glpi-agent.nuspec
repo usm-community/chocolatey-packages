@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>glpi-agent</id>
+    <version>1.5</version>
+    <owners>Ayt3ck, usm-community</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>GLPI Agent</title>
+    <authors>GLPI Project, Teclib'</authors>
+    <projectUrl>https://glpi-project.org</projectUrl>
+    <iconUrl>https://glpi-agent.readthedocs.io/en/latest/_static/glpi-agent.png</iconUrl>
+    <copyright>Copyright 2011-2023 Teclib Editions</copyright>
+    <licenseUrl>https://github.com/glpi-project/glpi-agent/blob/develop/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/glpi-project/glpi-agent</projectSourceUrl>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/manual/glpi-agent</packageSourceUrl>
+    <docsUrl>https://glpi-agent.readthedocs.io/en/latest/</docsUrl>
+    <mailingListUrl>https://github.com/glpi-project/glpi-agent/discussions</mailingListUrl>
+    <bugTrackerUrl>https://github.com/glpi-project/glpi-agent/issues</bugTrackerUrl>
+    <tags>glpi-agent glpi agent inventory</tags>
+    <summary>Agent allowing to communicate with the GLPI server</summary>
+    <description><![CDATA[# GLPI Agent
+
+Agent allowing to communicate with a GLPI server.
+
+It introduces new features and a new protocol to communicate directly with a GLPI server and its native inventory function.
+Based on the FusionInventory agent (v2.6), it also supports communication with the FusionInventory plug-in for GLPI and will remain fully compatible in its 1.x versions.
+
+## Install Arguments
+
+- `SERVER=https://<your_glpi_server>:<port>` Specify the inventory server and port.
+
+- `TAG=<YourTAG>` Specify the tag to send to the server.
+
+Command-line options for installer configuration. See the [official page](https://glpi-agent.readthedocs.io/en/latest/installation/windows-command-line.html#command-line-parameters) for details and defaults.
+
+### Examples
+
+`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/"`
+
+`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/ TAG=InstalledByChocolatey"`]]></description>
+    <releaseNotes>https://github.com/glpi-project/glpi-agent/releases</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
