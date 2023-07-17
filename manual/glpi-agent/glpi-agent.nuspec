@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>glpi-agent</id>
-    <version>1.5</version>
+    <version>1.5.0</version>
     <owners>Ayt3ck, usm-community</owners>
     <!-- ============================== -->
 
@@ -31,9 +31,9 @@ Based on the FusionInventory agent (v2.6), it also supports communication with t
 
 ## Install Arguments
 
-- `SERVER=https://<your_glpi_server>:<port>` Specify the inventory server and port.
+- `SERVER=https://your_glpi_server:port` Specify the inventory server and port.
 
-- `TAG=<YourTAG>` Specify the tag to send to the server.
+- `TAG=YourTAG` Specify the tag to send to the server.
 
 Command-line options for installer configuration. See the [official page](https://glpi-agent.readthedocs.io/en/latest/installation/windows-command-line.html#command-line-parameters) for details and defaults.
 
