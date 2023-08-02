@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $latest_asset = (Invoke-RestMethod -Uri $releases).assets
 
-    $url = $latest_asset | Where-Object browser_download_url -Match 'Rancher\.Desktop\.Setup\..*\.exe' | Select-Object -First 1 -ExpandProperty browser_download_url
+    $url = $latest_asset | Where-Object browser_download_url -Match 'Rancher\.Desktop\.Setup\..*\.msi' | Select-Object -First 1 -ExpandProperty browser_download_url
     $version = Get-Version $url
 
     return @{
