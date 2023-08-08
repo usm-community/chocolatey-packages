@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>httpie-desktop</id>
-    <version>2023.3.0</version>
+    <version>2023.3.3</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/httpie-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->
@@ -21,7 +21,7 @@
     <bugTrackerUrl>https://github.com/httpie/desktop/issues</bugTrackerUrl>
     <tags>api desktop api-client developer-tools api-testing httpie</tags>
     <summary>HTTPie for desktop helps to test, debug and interacting with APIs &amp; HTTP servers</summary>
-    <description><![CDATA[**HTTPie for Desktop is in private beta, join the waitlist to get early access: https://httpie.io/beta**
+    <description><![CDATA[**HTTPie for Desktop is now in public beta (https://httpie.io/blog/changelog-0017#public-beta)**
 
 All the user-friendliness of our Terminal version, now wrapped up in a sleek graphical interface.
 
