@@ -1,6 +1,6 @@
 ﻿# HTTPie for Desktop
 
-**HTTPie for Desktop is in private beta, join the waitlist to get early access: https://httpie.io/beta**
+**HTTPie for Desktop is now in public beta (https://httpie.io/blog/changelog-0017#public-beta)**
 
 All the user-friendliness of our Terminal version, now wrapped up in a sleek graphical interface.
 
