@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ltspice</id>
+    <version>17.1.10.0</version>
+    <owners>USM Team</owners>
+    <!-- =============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>LTspice</title>
+    <authors>Analog Devices</authors>
+    <projectUrl>https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html</projectUrl>
+    <tags>simulator electrical engineering</tags>
+    <summary>LTspice SPICE Simulator Software</summary>
+    <description>LTspice® is a powerful, fast, and free SPICE simulator software, schematic capture and waveform viewer with enhancements and models for improving the simulation of analog circuits</description>
+    <iconUrl>https://i.redd.it/x6gnx2y78vy51.png</iconUrl>
+    <copyright>1995 - 2023</copyright>
+    <licenseUrl>https://www.analog.com/en/design-center/evaluation-hardware-and-software/analog-devices-software-license-agreement.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html#learn</docsUrl>
+    <!-- =============================== -->
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
