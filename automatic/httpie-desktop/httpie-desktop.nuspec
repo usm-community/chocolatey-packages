@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>httpie-desktop</id>
-    <version>2023.3.5</version>
+    <version>2023.3.6</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/httpie-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->

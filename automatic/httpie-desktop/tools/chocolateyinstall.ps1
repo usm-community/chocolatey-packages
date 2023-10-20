@@ -1,18 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://github.com/httpie/desktop/releases/download/v2023.3.5/HTTPie-Setup-2023.3.5.exe'
+$url = 'https://github.com/httpie/desktop/releases/download/v2023.3.6/HTTPie-Setup-2023.3.6.exe'
 $pp = Get-PackageParameters
 
-$args = '/S'
-if ($pp['allusers']) { $args = $args + " /AllUsers" }
+$params = '/S'
+if ($pp['allusers']) { $params = $params + " /AllUsers" }
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url            = $url
   softwareName   = 'HTTPie*'
-  checksum       = 'edd42f3754e91ff41d8013867a3ec28ba8941c784bcbd230448e6a96b4006eae'
+  checksum       = '2e88b2de152c905b94b252e2c209ca8c4aaf48290a11e0645470fd9b58cad05b'
   checksumType   = 'sha256'
-  silentArgs     = $args
+  silentArgs     = $params
   validExitCodes = @(0)
 }
 
