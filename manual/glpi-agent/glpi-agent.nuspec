@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>glpi-agent</id>
-    <version>1.5.0</version>
+    <version>1.7.1</version>
     <owners>Ayt3ck, usm-community</owners>
     <!-- ============================== -->
 
@@ -41,7 +41,7 @@ Command-line options for installer configuration. See the [official page](https:
 
 `choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/"`
 
-`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/ TAG=InstalledByChocolatey"`]]></description>
+`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/ TAG=InstalledByChocolatey RUNNOW=1"`]]></description>
     <releaseNotes>https://github.com/glpi-project/glpi-agent/releases</releaseNotes>
     <!-- =============================== -->
   </metadata>

@@ -7,9 +7,9 @@ Based on the FusionInventory agent (v2.6), it also supports communication with t
 
 ## Install Arguments
 
-- `SERVER=https://<your_glpi_server>:<port>` Specify the inventory server and port.
+- `SERVER=https://your_glpi_server:port` Specify the inventory server and port.
 
-- `TAG=<YourTAG>` Specify the tag to send to the server.
+- `TAG=YourTAG` Specify the tag to send to the server.
 
 Command-line options for installer configuration. See the [official page](https://glpi-agent.readthedocs.io/en/latest/installation/windows-command-line.html#command-line-parameters) for details and defaults.
 
@@ -17,4 +17,4 @@ Command-line options for installer configuration. See the [official page](https:
 
 `choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/"`
 
-`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/ TAG=InstalledByChocolatey"`
+`choco install glpi-agent --install-arguments="SERVER=https://inventory.glpi.org/glpi/ TAG=InstalledByChocolatey RUNNOW=1"`
