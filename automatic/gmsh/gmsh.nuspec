@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gmsh</id>
-    <version>4.11.1</version>
+    <version>4.12.1</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gmsh</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
