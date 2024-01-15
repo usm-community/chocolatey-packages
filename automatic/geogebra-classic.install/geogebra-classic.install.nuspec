@@ -43,7 +43,6 @@ GeoGebra est un logiciel de math√©matiques dynamiques, pour tous les niveaux d'√
     <releaseNotes>https://wiki.geogebra.org/en/Reference:Changelog_6.0</releaseNotes>
     <docsUrl>https://wiki.geogebra.org/en/Manual</docsUrl>
     <mailingListUrl>https://help.geogebra.org</mailingListUrl>
-    <bugTrackerUrl>https://help.geogebra.org/bugs</bugTrackerUrl>
     <!-- =============================== -->
   </metadata>
   <files>
