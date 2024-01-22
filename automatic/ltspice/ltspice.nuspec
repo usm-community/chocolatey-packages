@@ -4,6 +4,7 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ltspice</id>
     <version>17.1.15.0</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ltspice</packageSourceUrl>
     <owners>USM Team</owners>
     <!-- =============================== -->
 
@@ -14,13 +15,12 @@
     <tags>simulator electrical engineering</tags>
     <summary>LTspice SPICE Simulator Software</summary>
     <description>LTspice® is a powerful, fast, and free SPICE simulator software, schematic capture and waveform viewer with enhancements and models for improving the simulation of analog circuits</description>
-    <iconUrl>https://i.redd.it/x6gnx2y78vy51.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/ltspice.png</iconUrl>
     <copyright>1995 - 2023</copyright>
     <licenseUrl>https://www.analog.com/en/design-center/evaluation-hardware-and-software/analog-devices-software-license-agreement.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html#learn</docsUrl>
     <!-- =============================== -->
-
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
