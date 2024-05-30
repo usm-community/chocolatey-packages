@@ -27,10 +27,20 @@
 The source code is directly available and provided in each application download.
 
 Icy is founded by Institut Pasteur and France-BioImaging
-]]></description>
+]]>
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/INSTALLDIR:` - Directory you wish to install Icy in - defaults to "C:\"
+
+ To pass parameters, use `--params "''"` (e.g. `choco install icy [other options] --params="'/INSTALLDIR:C:\CustomIcyInstallDir\'"`).
+ To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+  </description>
     <!-- =============================== -->
     <dependencies>
       <dependency id="jre8"/>
+      <dependency id="chocolatey-core.extension"/>
     </dependencies>
   </metadata>
   <files>
