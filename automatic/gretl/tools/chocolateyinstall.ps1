@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url = 'http://prdownloads.sourceforge.net/gretl/gretl-2024b-32.exe'
-$url64 = 'http://prdownloads.sourceforge.net/gretl/gretl-2024b-64.exe'
+$url = 'https://prdownloads.sourceforge.net/gretl/gretl-2024b-32.exe'
+$url64 = 'https://prdownloads.sourceforge.net/gretl/gretl-2024b-64.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
