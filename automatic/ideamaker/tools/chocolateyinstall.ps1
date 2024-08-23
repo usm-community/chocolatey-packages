@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://download.raise3d.com/ideamaker/release/4.3.3/install_ideaMaker_4.3.3.6560.exe'
+$url = 'https://downcdn.raise3d.com/ideamaker/release/5.0.6-fix/install_ideaMaker_5.0.6.8380.exe'
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     fileType       = 'EXE'
     url            = $url
     softwareName   = 'ideamaker*'
-    checksum       = '803e42171a7b7f1d41ca65484dc65806d420f4e8614d979bc5624bde87403d85'
+    checksum       = 'f17bf7c346ee46037e0f5d8e534712297219aea6e37fd5c2fbebef9d146614f4'
     checksumType   = 'sha256'
     silentArgs     = '/S'
     validExitCodes = @(0)
