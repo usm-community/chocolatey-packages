@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>arduino-portable</id>
+    <id>arduino.portable</id>
     <version>2.3.2</version>
     <title>Arduino IDE (Portable)</title>
     <authors>Arduino</authors>
@@ -11,7 +11,7 @@
     <licenseUrl>https://github.com/arduino/arduino-ide/blob/main/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/arduino/arduino-ide</projectSourceUrl>
-    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/arduino-portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/arduino.portable</packageSourceUrl>
     <docsUrl>https://docs.arduino.cc/software/ide/#ide-v2</docsUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/arduino-ide.png</iconUrl>
     <tags>Arduino Development Editor</tags>
