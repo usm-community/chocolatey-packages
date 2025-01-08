@@ -1,4 +1,4 @@
-﻿# PyMca
+# PyMca
 
 ## PyMca X-ray Fluorescence Toolkit
 

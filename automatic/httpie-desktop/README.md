@@ -1,4 +1,4 @@
-﻿# HTTPie for Desktop
+# HTTPie for Desktop
 
 **HTTPie for Desktop is now in public beta (https://httpie.io/blog/changelog-0017#public-beta)**
 

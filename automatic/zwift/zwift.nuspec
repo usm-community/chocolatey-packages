@@ -9,7 +9,7 @@
     <title>Zwift</title>
     <authors>Zwift</authors>
     <projectUrl>https://www.zwift.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/zwift.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@957f43bb7f203003862fdd98b74f65c6bdd678eb/icons/zwift.png</iconUrl>
     <copyright>https://zwift.com/p/terms</copyright>
     <licenseUrl>https://support.zwift.com/en_us/end-user-license-agreement-rymuiTZr</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

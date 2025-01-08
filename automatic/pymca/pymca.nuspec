@@ -13,7 +13,7 @@
     <title>PyMca</title>
     <authors>V.A. Solé - ESRF Software Group</authors>
     <projectUrl>http://pymca.sourceforge.net</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/pymca.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@5813f9d6bfbfa9a46e23482ee5a87edc2ab53e23/icons/pymca.png</iconUrl>
     <licenseUrl>http://pymca.sourceforge.net/license.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/vasole/pymca</projectSourceUrl>

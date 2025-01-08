@@ -13,7 +13,7 @@
     <title>Gmsh</title>
     <authors>Christophe Geuzaine, Jean-François Remacle</authors>
     <projectUrl>https://gmsh.info/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/gmsh.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@19cd67297a31b12e5cbf8a9f3a937da8004f237b/icons/gmsh.png</iconUrl>
     <licenseUrl>https://gmsh.info/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.onelab.info/gmsh/gmsh</projectSourceUrl>

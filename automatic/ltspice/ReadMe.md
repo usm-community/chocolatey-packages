@@ -1,4 +1,4 @@
-﻿# LTspice
+# LTspice
 
 ### What is LTspice ?
 

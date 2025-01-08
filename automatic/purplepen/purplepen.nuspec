@@ -12,7 +12,7 @@
     <title>Purple Pen</title>
     <authors>Peter Golde</authors>
     <projectUrl>http://purple-pen.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/purplepen.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@d861447449ccd6508b171948c5895a6ecc7be5e4/icons/purplepen.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/petergolde/PurplePen</projectSourceUrl>
     <docsUrl>http://purple-pen.org/#learn</docsUrl>

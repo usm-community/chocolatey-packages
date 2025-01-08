@@ -7,7 +7,7 @@
     <authors>Pascal Brachet - Lycée Bernard Palissy d'Agen</authors>
     <owners>gfe, overage</owners>
     <projectUrl>http://www.xm1math.net/algobox/index.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/algobox.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@288e8775cced40eaf020379c97f5b94b63004579/icons/algobox.png</iconUrl>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/algobox</packageSourceUrl>
     <tags>algobox</tags>
     <summary>Initiation à l'algorithmique</summary>
