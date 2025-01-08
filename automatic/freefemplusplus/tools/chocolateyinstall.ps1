@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url64 = 'https://github.com/FreeFem/FreeFem-sources/releases/download/v4.13/FreeFem%2B%2B-4.13-win64.exe'
+$url64 = 'https://github.com/FreeFem/FreeFem-sources/releases/download/v4.15/FreeFem%2B%2B-4.15-win64.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -7,7 +7,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url64bit       = $url64
   softwareName   = 'freefem*'
-  checksum64     = 'bc528e8fa1a17ca61d87ad7b575dd5b17897718d293d9694a4675463a9686f92'
+  checksum64     = 'e72f2274d2971e41c94f13c30ae692f6f7842de3c7310144daa4276193d40195'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)

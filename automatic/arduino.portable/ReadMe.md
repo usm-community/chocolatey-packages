@@ -1,4 +1,4 @@
-﻿## Arduino IDE (Portable)
+## Arduino IDE (Portable)
 
 This package Unzip Arduino IDE in the "C:\ProgramFiles\Aduino IDE" folder, thus making the software accessible to all users.
 

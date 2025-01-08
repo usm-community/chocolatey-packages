@@ -1,4 +1,4 @@
-﻿# Gretl
+# Gretl
 
 Gretl Is a cross-platform software package for econometric analysis, written in the C programming language.
 

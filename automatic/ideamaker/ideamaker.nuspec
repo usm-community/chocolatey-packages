@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ideamaker</id>
-    <version>5.0.6.8380</version>
+    <version>5.1.3.8475</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ideamaker</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
@@ -13,7 +13,7 @@
     <title>ideaMaker</title>
     <authors>Raise 3D Technologies, Inc.</authors>
     <projectUrl>https://www.raise3d.com/ideamaker/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/ideamaker.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@381b17caa195a337d22145eb6f40ec591bfe8cfc/icons/ideamaker.png</iconUrl>
     <copyright>2009-2023</copyright>
     <licenseUrl>https://www.raise3d.com/legal/raise3d-software-firmware-license-agreement/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

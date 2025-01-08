@@ -1,4 +1,4 @@
-﻿# ideaMaker
+# ideaMaker
 
 ## Overview
 

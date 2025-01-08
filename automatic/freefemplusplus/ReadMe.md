@@ -1,4 +1,4 @@
-﻿## FreeFem++
+## FreeFem++
 
 FreeFem++ is a partial differential equation solver. It has its own language. freefem scripts can solve multiphysics non linear systems in 2D and 3D.
 

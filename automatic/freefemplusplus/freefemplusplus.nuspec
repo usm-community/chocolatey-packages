@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>freefemplusplus</id>
-    <version>4.13</version>
+    <version>4.15</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/freefemplusplus</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
@@ -13,7 +13,7 @@
     <title>FreeFEM++</title>
     <authors>FreeFEM</authors>
     <projectUrl>http://www3.freefem.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/freefem.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@2b117851b26feb7938c1d1bd394b9feceab113a8/icons/freefem.png</iconUrl>
     <licenseUrl>https://github.com/FreeFem/FreeFem-sources/blob/master/LICENSE.md</licenseUrl>
     <tags>freefemplusplus equation solver</tags>
     <projectSourceUrl>https://github.com/FreeFem/FreeFem-sources</projectSourceUrl>

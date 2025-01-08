@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>arduino.portable</id>
-    <version>2.3.2</version>
+    <version>2.3.4</version>
     <title>Arduino IDE (Portable)</title>
     <authors>Arduino</authors>
     <owners>InLava57, usm, overage</owners>
@@ -13,7 +13,7 @@
     <projectSourceUrl>https://github.com/arduino/arduino-ide</projectSourceUrl>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/arduino.portable</packageSourceUrl>
     <docsUrl>https://docs.arduino.cc/software/ide/#ide-v2</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/arduino-ide.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@6f262d49011e8eae118b86223b362ab8d1be2de1/icons/arduino-ide.png</iconUrl>
     <tags>Arduino Development Editor</tags>
     <summary>The Arduino Integrated Development Environment - or Arduino Software (IDE) - contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions and a series of menus. It connects to the Arduino hardware to upload programs and communicate with them.</summary>
     <description><![CDATA[This package Unzip Arduino IDE in the "C:\ProgramFiles\Aduino IDE" folder, thus making the software accessible to all users.

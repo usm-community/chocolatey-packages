@@ -1,4 +1,4 @@
-﻿# Rancher Desktop
+# Rancher Desktop
 
 ## Requirements
 
