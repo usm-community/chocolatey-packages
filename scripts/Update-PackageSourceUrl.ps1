@@ -99,7 +99,7 @@ function Replace-PackageSourceUrl{
 
   $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
 
-  $url = "https://github.com/${GithubRepository}/tree/master/$PackagesDirectory/$PackageName"
+  $url = "https://github.com/${GithubRepository}/tree/main/$PackagesDirectory/$PackageName"
 
   $nuspec = $nuspec -replace '<packageSourceUrl>.*',"<packageSourceUrl>$url</packageSourceUrl>"
 
