@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
     $url64 = $download_page.links | Where-Object href -Match 'gretl-(.*)-64.exe$' | Select-Object -First 1 -ExpandProperty href
 
-    $download_page.ParsedHtml.all.tags("p") | Where-Object { $_.InnerText -match 'latest release \((?<releasedate>\w+ \d+, \d{4})\)' } | Select-Object -First 1 -ExpandProperty InnerText
+    $($download_page.RawContent).Split("`n") | Where-Object { $_ -Match "<td><p>latest release \((?<releasedate>\w+ \d+, \d{4})\)</p></td>"}| Select-Object -First 1
     if ($Matches.releasedate -ne '') {
         $date = [datetime]::ParseExact($Matches.releasedate, 'MMM d, yyyy', [cultureinfo]::InvariantCulture)
         $version = $date.ToString('yyyy.yyMMdd')
