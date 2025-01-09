@@ -1,6 +1,7 @@
 Import-Module au
 
-$releases = 'https://sourceforge.net/projects/pymca/files/'
+$releases = 'https://sourceforge.net/projects/pymca/files/pymca'
+$domain = 'https://sourceforge.net'
 
 function global:au_SearchReplace {
     @{
@@ -15,9 +16,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_release = $download_page.Links | Where-Object href -Match 'PyMca\d\.\d\.\d' | Select-Object -First 1 -ExpandProperty href
 
-    $title = $download_page.Links | Where-Object title -Match 'pymca.*-win64.exe' | Select-Object -First 1 -ExpandProperty title
-    $version = Get-Version $title
+    $url_latest_release = $domain + $latest_release
+    $download_page_latest = Invoke-WebRequest -Uri $url_latest_release -UseBasicParsing
+    $link = $download_page_latest.Links | Where-Object href -Match 'pymca.*-win64.exe' | Select-Object -First 1 -ExpandProperty href
+    $version = Get-Version $link
 
     return @{
         Version = $version
