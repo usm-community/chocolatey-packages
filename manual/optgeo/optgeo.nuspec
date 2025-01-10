@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>optgeo</id>
     <title>OptGeo</title>
     <version>3.00</version>
     <authors>Jeanmarie BIANSAN</authors>
-    <owners>Jeanmarie BIANSAN - Olrod54</owners>
-    <summary>Logiciel  de simulation d'optique géométrique à 2 dimensions.</summary>
-    <description>OptGeo est un logiciel libre de simulation d'optique géométrique à deux dimensions.
-      Il est distribué sous les termes de la GNU General Public License, dont voici le texte original en anglais, et une traduction française sans valeur légale.</description>
+    <owners>olrod54</owners>
+    <summary>OptGeo is a free two-dimensional geometric optics simulation software.</summary>
+    <description>OptGeo is a free two-dimensional geometric optics simulation software.</description>
     <projectUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectUrl>
     <projectSourceUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectSourceUrl>
-    <tags>OptGeo</tags>
+    <tags>OptGeo two-dimensional geometric optics simulation software</tags>
     <copyright>Jeanmarie BIANSAN</copyright>
     </metadata>
   <files>

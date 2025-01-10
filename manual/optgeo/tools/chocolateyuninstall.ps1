@@ -1,16 +1,16 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  softwareName  = 'optgeo*'  
-  fileType      = 'EXE' 
-  silentArgs    = "/VERYSILENT"
-  validExitCodes= @(0) 
+  packageName    = $env:ChocolateyPackageName
+  softwareName   = 'optgeo*'
+  fileType       = 'EXE'
+  silentArgs     = "/VERYSILENT"
+  validExitCodes = @(0)
 }
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
 if ($key.Count -eq 1) {
-  $key | ForEach-Object { 
+  $key | ForEach-Object {
     $packageArgs['file'] = "$($_.UninstallString)"
     Uninstall-ChocolateyPackage @packageArgs
   }
