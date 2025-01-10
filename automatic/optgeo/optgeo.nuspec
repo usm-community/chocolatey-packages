@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>optgeo</id>
     <title>OptGeo</title>
     <version>3.00</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/optgeo</packageSourceUrl>
     <authors>Jeanmarie BIANSAN</authors>
-    <owners>olrod54</owners>
+    <owners>olrod54,usm</owners>
     <summary>OptGeo is a free two-dimensional geometric optics simulation software.</summary>
     <description>OptGeo is a free two-dimensional geometric optics simulation software.</description>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@main/icons/optgeo.png</iconUrl>
     <projectUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectUrl>
     <projectSourceUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectSourceUrl>
     <tags>OptGeo two-dimensional geometric optics simulation software</tags>
     <copyright>Jeanmarie BIANSAN</copyright>
+    <licenseUrl>http://jeanmarie.biansan.free.fr/telechargement/gpl.txt</licenseUrl>
     </metadata>
   <files>
     <file src="tools\**" target="tools" />
