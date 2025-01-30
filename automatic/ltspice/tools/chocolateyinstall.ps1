@@ -6,7 +6,7 @@ $packageArgs = @{
   fileType       = 'MSI'
   url64          = $url64
   softwareName   = 'LTspice*'
-  checksum64     = '404F065708FADB95D73BA8135EF8AC2E851B8CD1D57DB9CD77DAE64047E84815'
+  checksum64     = 'BA8C2AA4EBD5A384884B3B79E8481D75A4F63DBFC77669DB136745DD343AD417'
   checksumType64 = 'sha256'
   silentArgs     = 'AI_INSTALLPERUSER=0 /quiet'
 }
