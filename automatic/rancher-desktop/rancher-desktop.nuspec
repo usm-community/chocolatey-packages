@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>rancher-desktop</id>
-    <version>1.17.0</version>
+    <version>1.18.0</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/rancher-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->

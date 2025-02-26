@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ideamaker</id>
-    <version>5.1.3.8475</version>
+    <version>5.1.4.8480</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ideamaker</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->

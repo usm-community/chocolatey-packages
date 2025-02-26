@@ -3,13 +3,14 @@
   <metadata>
     <id>optgeo</id>
     <title>OptGeo</title>
-    <version>3.00</version>
+    <version>3.1</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/optgeo</packageSourceUrl>
     <authors>Jeanmarie BIANSAN</authors>
     <owners>olrod54,usm</owners>
     <summary>OptGeo is a free two-dimensional geometric optics simulation software.</summary>
-    <description>OptGeo is a free two-dimensional geometric optics simulation software.</description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@main/icons/optgeo.png</iconUrl>
+    <description><![CDATA[Url : http://jeanmarie.biansan.free.fr/optgeo.html
+]]></description>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@7e44d248e26210c87f9b1f942812b167a08888f7/icons/optgeo.png</iconUrl>
     <projectUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectUrl>
     <projectSourceUrl>http://jeanmarie.biansan.free.fr/optgeo.html</projectSourceUrl>
     <tags>OptGeo two-dimensional geometric optics simulation software</tags>
