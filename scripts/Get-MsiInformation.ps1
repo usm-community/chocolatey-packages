@@ -92,7 +92,7 @@ This example takes multiple paths from a Get-ChildItem query and extracts the in
 #>
 function Get-MsiInformation
 {
-    [CmdletBinding(SupportsShouldProcess=$true, 
+    [CmdletBinding(SupportsShouldProcess=$true,
                    PositionalBinding=$false,
                    ConfirmImpact='Medium')]
     [Alias("gmsi")]
