@@ -1,11 +1,11 @@
 $ErrorActionPreference = 'Stop';
-$version = '1.12'
+$version = '1.13'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'msi'
   url64         = "https://github.com/glpi-project/glpi-agent/releases/download/$version/GLPI-Agent-$version-x64.msi"
-  checksum64    = 'ab2ec1f9b3ab69d0d3f6ed45742374183caa4b3198d78e21a55d4d4ccd424e19'
+  checksum64    = '9d0410f87927e83545b227ef10fa4eeb227561513cb03551a394a4d3975e588a'
   checksumType64= 'sha256' 
   silentArgs    = '/quiet'
   validExitCodes= @(0, 3010, 1641)
