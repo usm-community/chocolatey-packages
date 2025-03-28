@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>purplepen</id>
-    <version>3.5.2</version>
+    <version>3.5.3</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/purplepen</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->
