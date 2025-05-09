@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url = 'http://jeanmarie.biansan.free.fr/telechargement/lazarus/optgeo/3.01/installateuroptgeo_3.01.exe'
+$url = 'http://jeanmarie.biansan.free.fr/telechargement/lazarus/optgeo/3.03/installateuroptgeo_3.03.exe'
 
 $packageArgs = @{
   packageName  = $packageName
   softwareName = 'optgeo*'
   fileType     = 'exe'
   url          = $url
-  checksum     = '240c5a21bdcce5687fa79f950ba8be37c870193cdefe1b41413ade9652aa0013'
+  checksum     = '8a18aa72a7e028a23edc7f37ab81aa7ce774d2cb64a869cdc12b1cc82f4ce9ac'
   checksumType = 'sha256'
   silentArgs   = '/VERYSILENT /NORESTART'
 }
