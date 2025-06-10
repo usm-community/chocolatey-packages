@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>glpi-agent</id>
-    <version>1.14</version>
+    <version>1.15</version>
     <owners>Ayt3ck, usm-community</owners>
     <!-- ============================== -->
 
