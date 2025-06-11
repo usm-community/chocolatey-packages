@@ -3,7 +3,7 @@
   <metadata>
     <id>optgeo</id>
     <title>OptGeo</title>
-    <version>3.1</version>
+    <version>3.3</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/optgeo</packageSourceUrl>
     <authors>Jeanmarie BIANSAN</authors>
     <owners>olrod54,usm</owners>

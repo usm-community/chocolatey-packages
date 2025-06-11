@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>arduino.portable</id>
-    <version>2.3.4</version>
+    <version>2.3.6</version>
     <title>Arduino IDE (Portable)</title>
     <authors>Arduino</authors>
     <owners>InLava57, usm, overage</owners>
