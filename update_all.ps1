@@ -1,4 +1,5 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
+Import-Module AU
 
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = "$PSScriptRoot\automatic")
 
