@@ -6,7 +6,7 @@ $releases = 'https://www.raise3d.com/download/ideamaker-all-versions/'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
+        ".\tools\chocolateyinstall.ps1" = @{
             "(^[$]url\s*=\s*)('.*')"             = "`$1'$($Latest.URL32)'"
             "(^\s*checksum\s*=\s*)('.*')"        = "`$1'$($Latest.Checksum32)'"
             "(^\s*checksumType\s*=\s*)('.*')"    = "`$1'$($Latest.ChecksumType32)'"
