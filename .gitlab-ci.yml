@@ -7,3 +7,4 @@ build:
   script:
     - choco -v
     - pwsh -Command Get-Module -ListAvailable
+    - pwsh -File ./update_all.ps1
