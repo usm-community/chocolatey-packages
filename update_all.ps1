@@ -1,7 +1,8 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
-Import-Module AU
 
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = "$PSScriptRoot\automatic")
+
+Import-Module AU
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) {
     . $PSScriptRoot/update_vars.ps1
@@ -56,47 +57,47 @@ $Options = [ordered]@{
         }
     }
 
-    History                   = @{
-        Lines           = 90                                          #Number of lines to show
-        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path            = "$PSScriptRoot\Update-History.md"            #Path where to save history
-    }
+    # History                   = @{
+    #     Lines           = 90                                          #Number of lines to show
+    #     Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
+    #     Path            = "$PSScriptRoot\Update-History.md"            #Path where to save history
+    # }
 
-    Gist                      = @{
-        Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
-        ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
-    }
+    # Gist                      = @{
+    #     Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
+    #     ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
+    #     Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
+    # }
 
-    Git                       = @{
-        User     = ''                                       #Git username, leave empty if github api key is used
-        Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    }
+    # Git                       = @{
+    #     User     = ''                                       #Git username, leave empty if github api key is used
+    #     Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
+    # }
 
-    GitReleases               = @{
-        ApiToken    = $Env:github_api_key
-        ReleaseType = 'package'
-    }
+    # GitReleases               = @{
+    #     ApiToken    = $Env:github_api_key
+    #     ReleaseType = 'package'
+    # }
 
     RunInfo                   = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
         Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
     }
 
-    Mail                      = if ($Env:mail_user) {
-        @{
-            To          = $Env:mail_user
-            Server      = $Env:mail_server
-            UserName    = $Env:mail_user
-            Password    = $Env:mail_pass
-            Port        = $Env:mail_port
-            EnableSsl   = $Env:mail_enablessl -eq 'true'
-            UserMessage = "Update status: Update status: https://gist.github.com/choco-bot/$Env:gist_id"
-            SendAlways  = $false                        #Send notifications every time
-        }
-    }
-    else {
-    }
+    # Mail                      = if ($Env:mail_user) {
+    #     @{
+    #         To          = $Env:mail_user
+    #         Server      = $Env:mail_server
+    #         UserName    = $Env:mail_user
+    #         Password    = $Env:mail_pass
+    #         Port        = $Env:mail_port
+    #         EnableSsl   = $Env:mail_enablessl -eq 'true'
+    #         UserMessage = "Update status: Update status: https://gist.github.com/choco-bot/$Env:gist_id"
+    #         SendAlways  = $false                        #Send notifications every time
+    #     }
+    # }
+    # else {
+    # }
 
     ForcedPackages            = $ForcedPackages -split ' '
     UpdateIconScript          = "$PSScriptRoot\scripts\Update-IconUrl.ps1"
