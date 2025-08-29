@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>freefemplusplus</id>
+    <version>4.15</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/freefemplusplus</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>FreeFEM++</title>
+    <authors>FreeFEM</authors>
+    <projectUrl>http://www3.freefem.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@2b117851b26feb7938c1d1bd394b9feceab113a8/icons/freefem.png</iconUrl>
+    <licenseUrl>https://github.com/FreeFem/FreeFem-sources/blob/master/LICENSE.md</licenseUrl>
+    <tags>freefemplusplus equation solver</tags>
+    <projectSourceUrl>https://github.com/FreeFem/FreeFem-sources</projectSourceUrl>
+    <docsUrl>https://doc.freefem.org/</docsUrl>
+    <mailingListUrl>https://ljll.math.upmc.fr/cgi-bin/mailman/listinfo/freefempp</mailingListUrl>
+    <bugTrackerUrl>https://github.com/FreeFem/FreeFem-sources/issues</bugTrackerUrl>
+    <summary>FreeFEM is a partial differential equation solver for non-linear multi-physics systems in 2D and 3D using the finite element method.</summary>
+    <description><![CDATA[FreeFem++ is a partial differential equation solver. It has its own language. freefem scripts can solve multiphysics non linear systems in 2D and 3D.
+
+Problems involving PDE (2d, 3d) from several branches of physics such as fluid-structure interactions require interpolations of data on several meshes and their manipulation within one program. FreeFem++ includes a fast 2^d-tree-based interpolation algorithm and a language for the manipulation of data on multiple meshes (as a follow up of bamg (now a part of FreeFem++ ). 
+]]></description>
+    <releaseNotes>https://github.com/FreeFem/FreeFem-sources/blob/master/CHANGELOG.md</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zwift</id>
+    <version>1.1.13</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/zwift</packageSourceUrl>
+    <owners>gfe, overage</owners>
+  
+    <title>Zwift</title>
+    <authors>Zwift</authors>
+    <projectUrl>https://www.zwift.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@957f43bb7f203003862fdd98b74f65c6bdd678eb/icons/zwift.png</iconUrl>
+    <copyright>https://zwift.com/p/terms</copyright>
+    <licenseUrl>https://support.zwift.com/en_us/end-user-license-agreement-rymuiTZr</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://support.zwift.com/lang/fr/</docsUrl>
+    <tags>zwift cycling running gozwift</tags>
+    <summary>Zwift transforms indoor cycling and running workouts into fun, social, and dynamic adventures.</summary>
+    <description>Zwift blends the fun of video games with the intensity of serious training, helping you get faster. Level up in the virtual worlds of Zwift with a community that motivates you every minute. Choose from training plans, group rides, races, and more. You’ll get fitter and stronger. Discover the world of Zwift today.  </description>
+    <dependencies>
+      <dependency id="dotnet3.5" version="3.5.20160716" />
+      <dependency id="netfx-4.7.2" version="4.7.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

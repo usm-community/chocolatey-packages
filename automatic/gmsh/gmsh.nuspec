@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>gmsh</id>
+    <version>4.13.1</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gmsh</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Gmsh</title>
+    <authors>Christophe Geuzaine, Jean-François Remacle</authors>
+    <projectUrl>https://gmsh.info/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@19cd67297a31b12e5cbf8a9f3a937da8004f237b/icons/gmsh.png</iconUrl>
+    <licenseUrl>https://gmsh.info/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://gitlab.onelab.info/gmsh/gmsh</projectSourceUrl>
+    <docsUrl>https://gmsh.info/doc/texinfo/gmsh.html</docsUrl>
+    <bugTrackerUrl>https://gitlab.onelab.info/gmsh/gmsh/-/issues</bugTrackerUrl>
+    <tags>gmsh finite element mesh solver</tags>
+    <summary>A three-dimensional finite element mesh generator with built-in pre- and post-processing facilities</summary>
+    <description><![CDATA[Gmsh is an open source 3D finite element mesh generator with a built-in CAD engine and post-processor.
+
+Its design goal is to provide a fast, light and user-friendly meshing tool with parametric input and advanced visualization capabilities.  
+Gmsh is built around four modules: geometry, mesh, solver and post-processing.
+
+The specification of any input to these modules is done either interactively using the graphical user interface, in ASCII text files using Gmsh's own scripting language (.geo files), or using the C++, C, Python or Julia Application Programming Interface (API).
+]]></description>
+    <releaseNotes>https://gitlab.onelab.info/gmsh/gmsh/blob/master/CHANGELOG.txt</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

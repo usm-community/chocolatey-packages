@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ltspice</id>
+    <version>24.1.8.1</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ltspice</packageSourceUrl>
+    <owners>USM Team</owners>
+    <!-- =============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>LTspice</title>
+    <authors>Analog Devices</authors>
+    <projectUrl>https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html</projectUrl>
+    <tags>simulator electrical engineering</tags>
+    <summary>LTspice SPICE Simulator Software</summary>
+    <description><![CDATA[### What is LTspice ?
+
+LTspice is a SPICE-based analog electronic circuit simulator computer software, produced by semiconductor manufacturer Analog Devices (originally by Linear Technology). It is the most widely distributed and used SPICE software in the industry. Though it is freeware, LTspice is not artificially restricted to limit its capabilities (no feature limits, no node limits, no component limits, no subcircuit limits). It ships with a library of SPICE models from Analog Devices, Linear Technology, Maxim Integrated, and third-party sources. 
+]]></description>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@e8301a20643265fc69ce41aa70e6d9735c02d52f/icons/ltspice.png</iconUrl>
+    <copyright>1995 - 2023</copyright>
+    <licenseUrl>https://www.analog.com/en/design-center/evaluation-hardware-and-software/analog-devices-software-license-agreement.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html#learn</docsUrl>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

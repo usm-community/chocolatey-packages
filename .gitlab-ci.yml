@@ -1,0 +1,9 @@
+image: registry.usm.su.univ-lorraine.fr:5050/packages/ci-cd/aupkg/psmodule:1.3.0
+
+build:
+  tags:
+    - docker
+  stage: build
+  script:
+    - choco -v
+    - pwsh -Command Get-Module -ListAvailable
