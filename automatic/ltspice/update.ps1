@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 }
 
 function GetResultInformation([string]$url64) {
-    $dest = Join-Path [System.IO.Path]::GetTempPath() 'LTspice64.msi'
+    $dest = Join-Path $([System.IO.Path]::GetTempPath()) 'LTspice64.msi'
     Get-WebFile $url64 $dest | Out-Null
 
     $checksumType = 'sha256'
