@@ -1,5 +1,5 @@
 Import-Module AU
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module ([System.IO.Path]::Combine($env:ChocolateyInstall, 'helpers', 'chocolateyInstaller.psm1'))
 
 function global:au_SearchReplace {
   @{
@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function GetResultInformation([string]$url32) {
-  $dest = Join-Path $env:TEMP 'ZwiftSetup.exe'
+  $dest = Join-Path [System.IO.Path]::GetTempPath() 'ZwiftSetup.exe'
   Get-WebFile $url32 $dest | Out-Null
 
   $checksumType = 'sha256'
