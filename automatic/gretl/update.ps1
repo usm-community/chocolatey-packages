@@ -20,9 +20,11 @@ function global:au_GetLatest {
     $url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
     $url64 = $download_page.links | Where-Object href -Match 'gretl-(.*)-64.exe$' | Select-Object -First 1 -ExpandProperty href
 
-    $($download_page.RawContent).Split("`n") | Where-Object { $_ -Match "<td><p>latest release \((?<releasedate>\w+ \d+, \d{4})\)</p></td>"}| Select-Object -First 1
+    $($download_page.RawContent).Split("`n") | Where-Object { $_ -Match "<td><p>latest release\s+\((?<releasedate>\w+\s+\d+,\s+\d{4})\)</p></td>"}| Select-Object -First 1
     if ($Matches.releasedate -ne '') {
-        $date = [datetime]::ParseExact($Matches.releasedate, 'MMM d, yyyy', [cultureinfo]::InvariantCulture)
+        $cleanDate = $Matches.releasedate -replace '\s+', ' '
+        $cleanDate = $cleanDate.Trim()
+        $date = [datetime]::ParseExact($cleanDate, 'MMM d, yyyy', [cultureinfo]::InvariantCulture)
         $version = $date.ToString('yyyy.yyMMdd')
     } else {
         throw 'No release date match to defined mask'
