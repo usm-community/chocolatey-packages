@@ -44,18 +44,18 @@ $Options = [ordered]@{
     #RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
     #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
-    Report                    = @{
-        Type   = 'markdown'                                   #Report type: markdown or text
-        Path   = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
-        Params = @{                                          #Report parameters:
-            Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
-            NoAppVeyor      = $false                            #  Markdown: do not show AppVeyor build shield
-            UserMessage     = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags) | **TESTING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
-            NoIcons         = $false                            #  Markdown: don't show icon[Releases](https://github.com/$Env:github_user_repo/tags)
-            IconSize        = 32                                #  Markdown: icon size
-            Title           = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
-        }
-    }
+    # Report                    = @{
+    #     Type   = 'markdown'                                   #Report type: markdown or text
+    #     Path   = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
+    #     Params = @{                                          #Report parameters:
+    #         Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
+    #         NoAppVeyor      = $false                            #  Markdown: do not show AppVeyor build shield
+    #         UserMessage     = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags) | **TESTING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
+    #         NoIcons         = $false                            #  Markdown: don't show icon[Releases](https://github.com/$Env:github_user_repo/tags)
+    #         IconSize        = 32                                #  Markdown: icon size
+    #         Title           = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
+    #     }
+    # }
 
     # History                   = @{
     #     Lines           = 90                                          #Number of lines to show
@@ -74,15 +74,30 @@ $Options = [ordered]@{
     #     Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
     # }
 
+    GitLab         = @{
+        User           = $Env:CI_GITLAB_USER   # GitLab username to use for the push
+        API_Key        = $Env:CI_GITLAB_TOKEN   # GitLab API key associated with gitlab_user
+        PushURL        = $Env:CI_PUSH_URL   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://jekotia:MyPassword@git.example.org/jekotia/au.git
+        commitStrategy = 'single'   # Same values as the Git plugin; single, atomic, or atomictag
+        Force          = $true
+    }
+
+    PullRequest    = @{
+        Branch     = "au-chocolatey-packages"
+        BaseBranch = "main"
+        ApiKey     = $Env:CI_GITHUB_APIKEY
+    }
+
+
     # GitReleases               = @{
     #     ApiToken    = $Env:github_api_key
     #     ReleaseType = 'package'
     # }
 
-    RunInfo                   = @{
-        Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
-    }
+    # RunInfo                   = @{
+    #     Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
+    #     Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+    # }
 
     # Mail                      = if ($Env:mail_user) {
     #     @{
