@@ -19,7 +19,7 @@ function GetResultInformation([string]$url32) {
 
   $result = @{
     URL32          = $url32
-    Version        = Get-Item $dest | ForEach-Object { $_.VersionInfo.ProductVersion.Trim() }
+    Version        = (Get-ExeInfo -Path $dest)."Product Version"
     Checksum32     = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
     ChecksumType32 = $checksumType
   }

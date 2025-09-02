@@ -13,9 +13,9 @@ $funcs = @(
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
+  'Update-OnHeaderChanged'
   'Get-MsiInformation'
   'Get-MsiInfo'
-  'Update-OnHeaderChanged'
   'Get-ExeInfo'
 )
 
