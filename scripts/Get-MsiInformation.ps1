@@ -170,7 +170,7 @@ function Get-MsiInformation
     End
     {
         # Run garbage collection and release ComObject
-        [System.Runtime.Interopservices.Marshal]::ReleaseComObject($WindowsInstaller) | Out-Null
+        #[System.Runtime.Interopservices.Marshal]::ReleaseComObject($WindowsInstaller) | Out-Null
         [System.GC]::Collect()
     }
 }
