@@ -13,6 +13,9 @@ $funcs = @(
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
+  'Get-MsiInformation'
+  'Update-OnHeaderChanged'
+  'Get-ExeInfo'
 )
 
 $funcs | ForEach-Object {
