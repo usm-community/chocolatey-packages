@@ -17,7 +17,7 @@ function GetResultInformation([string]$url64) {
     $checksumType = 'sha256'
     $result = @{
         URL64      = $url64
-        Version    = (Get-MsiInformation -Path $dest).ProductVersion
+        Version    = (Get-MsiInfo -Path $dest).ProductVersion
         Checksum64 = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
     }
     Remove-Item -Force $dest -ErrorAction SilentlyContinue

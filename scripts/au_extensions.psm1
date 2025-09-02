@@ -14,6 +14,7 @@ $funcs = @(
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
   'Get-MsiInformation'
+  'Get-MsiInfo'
   'Update-OnHeaderChanged'
   'Get-ExeInfo'
 )
