@@ -4,8 +4,8 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>rancher-desktop</id>
-    <version>1.18.2</version>
-    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/rancher-desktop</packageSourceUrl>
+    <version>1.20.0</version>
+    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/rancher-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>Rancher Desktop</title>
     <authors>SUSE</authors>
     <projectUrl>https://rancherdesktop.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@469a0957a39ca3a7a5f4355fc245eae32a6f8a05/icons/rancher-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/rancher-desktop.png</iconUrl>
     <copyright>© 2022 SUSE</copyright>
     <licenseUrl>https://github.com/rancher-sandbox/rancher-desktop/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

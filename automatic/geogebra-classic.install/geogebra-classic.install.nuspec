@@ -4,8 +4,8 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>geogebra-classic.install</id>
-    <version>6.0.882.0</version>
-    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/geogebra-classic.install</packageSourceUrl>
+    <version>6.0.898.1</version>
+    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/geogebra-classic.install</packageSourceUrl>
     <owners>gfe, overage</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>GeoGebra Classic</title>
     <authors>GeoGebra</authors>
     <projectUrl>https://www.geogebra.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@30a1eacaf027e7adf72af3ccff58c894023aff1b/icons/geogebra-classic.install.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/geogebra-classic.install.png</iconUrl>
     <licenseUrl>https://www.geogebra.org/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/geogebra/geogebra</projectSourceUrl>

@@ -3,8 +3,8 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ltspice</id>
-    <version>24.1.8.1</version>
-    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ltspice</packageSourceUrl>
+    <version>24.1.9.1</version>
+    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/ltspice</packageSourceUrl>
     <owners>USM Team</owners>
     <!-- =============================== -->
 
@@ -18,7 +18,7 @@
 
 LTspice is a SPICE-based analog electronic circuit simulator computer software, produced by semiconductor manufacturer Analog Devices (originally by Linear Technology). It is the most widely distributed and used SPICE software in the industry. Though it is freeware, LTspice is not artificially restricted to limit its capabilities (no feature limits, no node limits, no component limits, no subcircuit limits). It ships with a library of SPICE models from Analog Devices, Linear Technology, Maxim Integrated, and third-party sources. 
 ]]></description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@e8301a20643265fc69ce41aa70e6d9735c02d52f/icons/ltspice.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/ltspice.png</iconUrl>
     <copyright>1995 - 2023</copyright>
     <licenseUrl>https://www.analog.com/en/design-center/evaluation-hardware-and-software/analog-devices-software-license-agreement.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
