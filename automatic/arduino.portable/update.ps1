@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.arduino.cc/en/software'
 $releases = 'https://api.github.com/repos/arduino/arduino-ide/releases/latest'

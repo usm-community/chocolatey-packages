@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'http://jeanmarie.biansan.free.fr/optgeo.html'
 $domain = 'http://jeanmarie.biansan.free.fr'

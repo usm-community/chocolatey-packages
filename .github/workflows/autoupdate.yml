@@ -29,7 +29,9 @@ jobs:
           choco --version
           cmd /c "set" | grep -i 'github\|runner' | sort
       - name: Install Chocolatey Automatic Package Updater Module
-        run: Install-Module -Name Chocolatey-AU -Force
+        run: |
+          Install-Module -Name Chocolatey-AU -Force
+          Install-Module -Name Wormies-AU-Helpers -Force
       - name: Check update for packages
         run: |
           $ErrorActionPreference = 'Continue'

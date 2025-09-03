@@ -1,6 +1,6 @@
 param([string]$IncludeStream, [switch]$Force)
 
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.raise3d.com/download/ideamaker-all-versions/'
 

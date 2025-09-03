@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://api.github.com/repos/rancher-sandbox/rancher-desktop/releases/latest'
 

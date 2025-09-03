@@ -1,6 +1,6 @@
 param([string]$IncludeStream, [switch]$Force)
 
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://download.geogebra.org/installers/6.0'
 
