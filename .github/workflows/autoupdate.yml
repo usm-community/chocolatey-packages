@@ -4,37 +4,42 @@ on:
   schedule:
     - cron:  '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      forced_packages:
+        description: The list of packages to forcibly update (like "pkg1:ver1 pkg2")
+        required: false
 
 defaults:
   run:
     shell: pwsh
 
 jobs:
-  update_choco_auto:
-    name: update_${{ matrix.package }}
+  auto_update:
     runs-on: windows-latest
-
-    strategy:
-      max-parallel: 1
-      matrix:
-        package:
-          - purplepen
-          - ltspice
 
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-
+      - name: Check a build environment
+        run: |
+          Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
+          $PSVersionTable
+          git --version
+          choco --version
+          cmd /c "set" | grep -i 'github\|runner' | sort
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name Chocolatey-AU -Force
-
-      - name: Run ${{ matrix.package }} update script
-        id: update
+      - name: Check update for packages
         run: |
-          cd automatic\${{ matrix.package }}
-          $UpdateOutput = .\update.ps1
-          $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
-          Write-Output "NupkgPath=$($NupkgPath)" >> $Env:GITHUB_OUTPUT
-          $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
-          Write-Output "UpdateStatus=$($UpdateStatus)" >> $Env:GITHUB_OUTPUT
+          $ErrorActionPreference = 'Continue'
+          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
+          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+      - name: Upload update results
+        uses: actions/upload-artifact@v4
+        with:
+          name: update_results
+          path: |
+            update_info.xml
+            Update-AUPackages.md
+            au_temp.zip
