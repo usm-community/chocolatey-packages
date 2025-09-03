@@ -35,3 +35,4 @@ mirror_to_github:
     - git push --mirror github
   needs:
     - build
+      optional: true
