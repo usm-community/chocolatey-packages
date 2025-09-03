@@ -4,8 +4,8 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gretl</id>
-    <version>2025.250605</version>
-    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/gretl</packageSourceUrl>
+    <version>2025.250320</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gretl</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>Gretl</title>
     <authors>Allin Cottrell, Riccardo Lucchetti</authors>
     <projectUrl>http://gretl.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/gretl.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@8ad41ed42225e0443a3ba59800f9f292e5125b69/icons/gretl.png</iconUrl>
     <projectSourceUrl>https://sourceforge.net/p/gretl/git</projectSourceUrl>
     <docsUrl>http://gretl.sourceforge.net/gretl-help/cmdref.html</docsUrl>
     <mailingListUrl>http://gretl.sourceforge.net/lists.html</mailingListUrl>

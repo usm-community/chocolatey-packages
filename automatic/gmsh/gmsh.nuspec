@@ -4,8 +4,8 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gmsh</id>
-    <version>4.14.1</version>
-    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/gmsh</packageSourceUrl>
+    <version>4.13.1</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gmsh</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>Gmsh</title>
     <authors>Christophe Geuzaine, Jean-François Remacle</authors>
     <projectUrl>https://gmsh.info/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/gmsh.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@19cd67297a31b12e5cbf8a9f3a937da8004f237b/icons/gmsh.png</iconUrl>
     <licenseUrl>https://gmsh.info/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.onelab.info/gmsh/gmsh</projectSourceUrl>

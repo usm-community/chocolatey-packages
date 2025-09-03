@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zwift</id>
-    <version>1.1.14</version>
-    <packageSourceUrl>https://github.com/rogier5/chocolatey-packages/tree/main/automatic/zwift</packageSourceUrl>
+    <version>1.1.13</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/zwift</packageSourceUrl>
     <owners>gfe, overage</owners>
   
     <title>Zwift</title>
     <authors>Zwift</authors>
     <projectUrl>https://www.zwift.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/rogier5/chocolatey-packages@ce8f20b93f4eb595d65dce72621d6a661a29a51d/icons/zwift.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@957f43bb7f203003862fdd98b74f65c6bdd678eb/icons/zwift.png</iconUrl>
     <copyright>https://zwift.com/p/terms</copyright>
     <licenseUrl>https://support.zwift.com/en_us/end-user-license-agreement-rymuiTZr</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
