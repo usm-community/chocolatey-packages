@@ -1,6 +1,6 @@
 param([string]$IncludeStream, [switch]$Force)
 
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://purple-pen.org/downloads'
 
