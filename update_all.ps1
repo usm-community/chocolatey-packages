@@ -78,8 +78,8 @@ $Options = [ordered]@{
         User           = $Env:CI_GITLAB_USER   # GitLab username to use for the push
         API_Key        = $Env:CI_GITLAB_TOKEN   # GitLab API key associated with gitlab_user
         PushURL        = $Env:CI_PUSH_URL   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://jekotia:MyPassword@git.example.org/jekotia/au.git
-        commitStrategy = 'single'   # Same values as the Git plugin; single, atomic, or atomictag
         Force          = $true
+        Branch         = "main"
     }
 
     PullRequest    = @{
