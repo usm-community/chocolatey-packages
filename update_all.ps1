@@ -69,11 +69,11 @@ $Options = [ordered]@{
     #     Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
     # }
 
-    Git = @{
-        User     = ''                     #Git username, leave empty if github api key is used
-        Password = $Env:CI_GITHUB_APIKEY  #Password if username is not empty, otherwise api key
-        Branch   = "main"
-    }
+    # Git = @{
+    #     User     = ''                     #Git username, leave empty if github api key is used
+    #     Password = $Env:CI_GITHUB_APIKEY  #Password if username is not empty, otherwise api key
+    #     Branch   = "main"
+    # }
 
     GitLab         = @{
         User           = $Env:CI_GITLAB_USER   # GitLab username to use for the push
