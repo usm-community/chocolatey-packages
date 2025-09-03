@@ -96,10 +96,10 @@ $Options = [ordered]@{
     #     ReleaseType = 'package'
     # }
 
-    RunInfo                   = @{
-        Exclude = 'password', 'apikey', 'apitoken', 'webhookurl'          #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
-    }
+    # RunInfo                   = @{
+    #     Exclude = 'password', 'apikey', 'apitoken', 'webhookurl'          #Option keys which contain those words will be removed
+    #     Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+    # }
 
     # Mail                      = if ($Env:mail_user) {
     #     @{
