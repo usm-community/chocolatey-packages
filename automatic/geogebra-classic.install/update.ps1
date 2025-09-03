@@ -15,10 +15,16 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+    $Algorithm = 'sha256'
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Algorithm $Algorithm
+    $Latest.ChecksumType32 = $Algorithm
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $regex = 'GeoGebra-Windows-Installer-\d-\d-\d{3}-\d\.msi$'
-    $url = $download_page.links | Where-Object href -match $regex | Select-Object -Last 1 -expand href
+    $url = $download_page.links | Where-Object href -match $regex | Select-Object -Last 1 -ExpandProperty href
     $version = Get-Version ($url -replace '-', '.')
 
     return @{
@@ -28,4 +34,4 @@ function global:au_GetLatest {
 
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none

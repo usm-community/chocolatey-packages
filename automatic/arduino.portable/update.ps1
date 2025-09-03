@@ -13,6 +13,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
+
 function global:au_GetLatest {
     $latest_asset = (Invoke-RestMethod -Uri $releases).assets
     $url = $latest_asset | Where-Object browser_download_url -Match 'arduino-ide_(?<version>[\d\.]+)_Windows_64bit.zip$' | Select-Object -First 1 -ExpandProperty browser_download_url
@@ -25,4 +29,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none

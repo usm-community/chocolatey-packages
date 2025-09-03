@@ -9,9 +9,12 @@ function global:au_SearchReplace {
             "(^[$]url64\s*=\s*)('.*')"              = "`$1'$($Latest.URL64)'"
             "(^[$]version\s*=\s*\[version\])('.*')" = "`$1'$($Latest.Version)'"
             "(^\s*checksum64\s*=\s*)('.*')"         = "`$1'$($Latest.Checksum64)'"
-            "(^\s*checksumType64\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumType64)'"
         }
     }
+}
+
+function global:au_BeforeUpdate {
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
 }
 
 function global:au_GetLatest {
@@ -29,4 +32,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor 64 -NoCheckUrl
+update -ChecksumFor none -NoCheckUrl

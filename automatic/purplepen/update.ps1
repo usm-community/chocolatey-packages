@@ -9,12 +9,14 @@ function global:au_SearchReplace {
         'tools\chocolateyinstall.ps1' = @{
             "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL)'"
             "(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(^\s*checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
         }
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -NoSuffix
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+}
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
@@ -30,4 +32,4 @@ function global:au_GetLatest {
 
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none

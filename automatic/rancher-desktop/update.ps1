@@ -11,6 +11,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+}
+
 function global:au_GetLatest {
     $latest_asset = (Invoke-RestMethod -Uri $releases).assets
 
@@ -24,4 +28,4 @@ function global:au_GetLatest {
 
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none

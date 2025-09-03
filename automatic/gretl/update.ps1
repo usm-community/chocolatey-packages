@@ -15,6 +15,14 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+    $Algorithm = 'sha256'
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Algorithm $Algorithm
+    $Latest.ChecksumType32 = $Algorithm
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64 -Algorithm $Algorithm
+    $Latest.ChecksumType64 = $Algorithm
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     $url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
@@ -37,4 +45,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor all
+update -ChecksumFor none
