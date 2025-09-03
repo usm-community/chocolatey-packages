@@ -21,6 +21,9 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url = $download_page.links | Where-Object href -match 'install_ideaMaker_(?<version>[\d\.]+).exe$' | Select-Object -First 1 -ExpandProperty href
     $version = $Matches.version
+    $Latest.Options.Headers = @{
+        'Referer' = $releases
+    }
 
     return @{
         Version  = $version
@@ -28,4 +31,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor none -NoCheckUrl
+update -ChecksumFor none
