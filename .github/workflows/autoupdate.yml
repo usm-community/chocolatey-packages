@@ -37,6 +37,25 @@ jobs:
           $ErrorActionPreference = 'Continue'
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }} # To authenticate GitHub CLI
+          au_push: false
+          # Github token to commit pushed packages to repository
+          github_user_repo: ${{ github.repository }}
+          github_api_key: ${{ secrets.TOKEN }}
+
+          # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
+          # Optional, leave empty to create anonymous gist
+          gist_id:
+
+          # Force test: gist id for test results
+          gist_id_test:
+
+          # Chocolatey API key - to push updated packages
+          api_key: 
+
+          # GitHub Actions build url which points to this build
+          GH_ACTIONS_BUILD_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
       - name: Upload update results
         uses: actions/upload-artifact@v4
         with:
