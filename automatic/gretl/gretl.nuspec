@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gretl</id>
-    <version>2025.250320</version>
+    <version>2025.250605</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/gretl</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
