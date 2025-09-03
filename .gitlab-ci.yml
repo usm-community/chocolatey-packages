@@ -34,5 +34,5 @@ mirror_to_github:
     - git fetch --tags origin
     - git push --mirror github
   needs:
-    - build
+    - job: build
       optional: true
