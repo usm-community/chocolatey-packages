@@ -18,16 +18,24 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -Headers @{
+        "User-Agent" = "Chocolatey"
+        "Referer" = $releases
+    }
+
     $url = $download_page.links | Where-Object href -match 'install_ideaMaker_(?<version>[\d\.]+).exe$' | Select-Object -First 1 -ExpandProperty href
     $version = $Matches.version
-    $Latest.Options.Headers = @{
-        'Referer' = $releases
-    }
+
 
     return @{
         Version  = $version
         URL32    = $url
+        Options = @{
+            Headers = @{
+                "User-Agent" = "Chocolatey"
+                "Referer" = $releases
+            }
+        }
     }
 }
 
