@@ -15,7 +15,7 @@ defaults:
 
 jobs:
   auto_update:
-    runs-on: windows-2019
+    runs-on: windows-2022
     permissions:
       contents: write  # push commits to a repository
     steps:
