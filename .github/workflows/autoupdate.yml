@@ -53,11 +53,9 @@ jobs:
         run: |
           Get-Module -ListAvailable | Format-Table Name, Version, Path
       - name: Check update for packages
-        shell: pwsh
+        shell: bash
         run: |
-          $ErrorActionPreference = 'Continue'
-          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
-          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+          pwsh -File ./update_all.ps1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }} # To authenticate GitHub CLI
           au_Push: true
