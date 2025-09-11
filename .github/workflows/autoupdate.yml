@@ -8,44 +8,59 @@ on:
       forced_packages:
         description: The list of packages to forcibly update (like "pkg1:ver1 pkg2")
         required: false
-
-defaults:
-  run:
-    shell: pwsh
-
 jobs:
   auto_update:
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
+    container:
+      image: chocolatey/choco:v2.5.1-linux
     permissions:
       contents: write  # push commits to a repository
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Install dependencies
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y git wget p7zip-full msitools libimage-exiftool-perl
+          source /etc/os-release
+          wget -q https://packages.microsoft.com/config/debian/$VERSION_ID/packages-microsoft-prod.deb
+          dpkg -i packages-microsoft-prod.deb
+          rm packages-microsoft-prod.deb
+          apt-get update
+          apt-get install -y powershell
       - name: Configure Git
+        shell: bash
         run: |
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
       - name: Check a build environment
+        shell: bash
         run: |
-          Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
-          $PSVersionTable
-          git --version
-          choco --version
-          cmd /c "set" | grep -i 'github\|runner' | sort
-      - name: Install Chocolatey Automatic Package Updater Module
+          echo "pwsh version: $(pwsh -Command '$PSVersionTable.PSVersion.ToString()')"
+          echo "git version: $(git --version | awk '{print $3}')"
+          echo "chocolatey version: $(choco --version)"
+      - name: Install required modules
+        shell: pwsh
         run: |
           Install-Module -Name Chocolatey-AU -Force
           Install-Module -Name Wormies-AU-Helpers -Force
+          Install-Module -Name AngleParse -Force
+      - name: Check install of modules
+        shell: pwsh
+        run: |
+          Get-Module -ListAvailable | Format-Table Name, Version, Path
       - name: Check update for packages
+        shell: pwsh
         run: |
           $ErrorActionPreference = 'Continue'
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }} # To authenticate GitHub CLI
-          au_push: false
+          au_push: true
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
           github_api_key: ${{ secrets.TOKEN }}
