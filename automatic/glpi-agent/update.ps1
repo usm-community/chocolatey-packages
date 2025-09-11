@@ -5,7 +5,7 @@ $releases = 'https://api.github.com/repos/glpi-project/glpi-agent/releases/lates
 function global:au_SearchReplace {
     @{
         'tools\chocolateyinstall.ps1' = @{
-            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+            "(^\s*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
