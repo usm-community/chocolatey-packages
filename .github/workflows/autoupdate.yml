@@ -56,12 +56,11 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Continue'
-          Set-StrictMode -Off
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }} # To authenticate GitHub CLI
-          au_push: true
+          au_Push: true
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
           github_api_key: ${{ secrets.TOKEN }}
