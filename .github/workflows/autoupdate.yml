@@ -12,7 +12,7 @@ jobs:
   auto_update:
     runs-on: ubuntu-latest
     container:
-      image: chocolatey/choco:v1.4.4-linux
+      image: chocolatey/choco:v2.5.0-linux
     permissions:
       contents: write  # push commits to a repository
     steps:
