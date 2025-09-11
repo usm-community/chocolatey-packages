@@ -73,7 +73,7 @@ jobs:
           gist_id_test:
 
           # Chocolatey API key - to push updated packages
-          api_key: 
+          api_key: ${{ secrets.APIKEY }}
 
           # GitHub Actions build url which points to this build
           GH_ACTIONS_BUILD_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
