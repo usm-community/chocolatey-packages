@@ -30,7 +30,7 @@ jobs:
       - name: Configure Git
         shell: bash
         run: |
-          git config --global --add safe.directory $PWD
+          git config --global --add safe.directory $(realpath .)
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
