@@ -33,7 +33,7 @@ jobs:
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
-          git config --global --add safe.directory /github/workspace
+          git config --global --add safe.directory .
       - name: Check a build environment
         shell: bash
         run: |
