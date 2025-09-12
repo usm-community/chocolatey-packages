@@ -26,7 +26,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32   = $url
+        URL32   = [System.Web.HttpUtility]::HtmlDecode($url)
     }
 }
 
