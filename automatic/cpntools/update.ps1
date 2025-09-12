@@ -21,8 +21,8 @@ function global:au_GetLatest {
     $urltodownload = $chooseos_page.Links | Where-Object href -Match '\/Windows\/' | Select-Object -First 1 -ExpandProperty href
     $download_page = Invoke-WebRequest -Uri $urltodownload -UseBasicParsing
 
-    $url = $download_page.Links | Where-Object href -Match 'cpntools_.*\.exe$' | Select-Object -First 1 -ExpandProperty href
-    $version = Get-Version $url
+    $url = $download_page.Links | Where-Object title -Match 'CPN Tools\s*(?<version>[\d\.]+)' | Select-Object -First 1 -ExpandProperty href
+    $version = $Matches.version
 
     return @{
         Version = $version
