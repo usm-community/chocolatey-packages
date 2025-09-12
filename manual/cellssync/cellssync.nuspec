@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>cellssync</id>
+    <version>0.9.4</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/manual/cellssync</packageSourceUrl>
+    <owners>overage</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>CellsSync</title>
+    <authors>Abstrium SAS</authors>
+    <projectUrl>https://pydio.com/en/get-pydio/downloads/pydiosync-desktop-app</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/icons/cells-sync.png</iconUrl>
+    <copyright>© 2012-2020 Abstrium SAS</copyright>
+    <licenseUrl>https://github.com/pydio/cells-sync/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/pydio/cells-sync</projectSourceUrl>
+    <docsUrl>https://pydio.com/en/docs/cells/v2/connect-desktop-sync</docsUrl>
+    <mailingListUrl>https://forum.pydio.com/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/pydio/cells-sync/issues</bugTrackerUrl>
+    <tags>cellssync sync files filesharing cells</tags>
+    <summary>Cells Sync is a desktop synchronization client for Pydio Cells server.</summary>
+    <description><![CDATA[Cells Sync is a desktop synchronization client for Pydio Cells server.
+
+## Features
+
+- 100% GO
+- Windows, MacOSX, Linux
+- Realtime propagation of changes _(when your local machine can connect to your server)_
+- Configurable sync direction (bi-directional / unidirectional)
+- Selective Folders synchronization
+- Supports various types of end points for syncing (any source/target can be combined):
+  - Cells Server (over HTTP/HTTPS)
+  - Local Folder
+  - Local Cells server (accessed directly if deployed inside the microservices mesh)
+  - S3-compatible storage service (tested with AWS S3)
+  - BoltDB storage (used for storing tree snapshots)
+  - Cells gRPC indexation services (implementing NodeProvider/NodeReceiver gRPC endpoints).
+]]></description>
+    <releaseNotes>https://github.com/pydio/cells-sync/blob/master/CHANGELOG.md</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
