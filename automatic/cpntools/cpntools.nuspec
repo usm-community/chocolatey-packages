@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>cpntools</id>
+    <version>4.0.1</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/cpntools</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>CPN Tools</title>
+    <authors>AIS Group</authors>
+    <projectUrl>http://cpntools.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/icons/cpntools.png</iconUrl>
+    <licenseUrl>http://cpntools.org/2018/01/15/license-for-cpn-tools-gui/</licenseUrl>
+    <projectSourceUrl>http://cpntools.org/2018/01/15/source/</projectSourceUrl>
+    <docsUrl>http://cpntools.org/2018/01/16/documentation-2/</docsUrl>
+    <bugTrackerUrl>http://cpntools.org/2018/01/24/bug-reports/</bugTrackerUrl>
+    <tags>cpntools petri nets simulator</tags>
+    <summary>A tool for editing, simulating, and analyzing Colored Petri nets</summary>
+    <description>
+A tool for editing, simulating, and analyzing Colored Petri nets.
+
+The tool features incremental syntax checking and code generation, which take place while a net is being constructed. A fast simulator efficiently handles untimed and timed nets. Full and partial state spaces can be generated and analyzed, and a standard state space report contains information, such as boundedness properties and liveness properties.
+
+## New Features in Version 4.0
+- Declarative constraints
+- 3rd part extensions
+- Simplified use of non-colored nets
+- Support for export to PNML
+- Support for real and time colorsets
+- Improved support for time (time intervals and state-space reduction)
+- Simplified state-space analysis
+- Fresh new look
+
+CPN Tools is originally developed by the CPN Group at Aarhus University from 2000 to 2010. The main architects behind the tool are Kurt Jensen, Søren Christensen, Lars M. Kristensen, and Michael Westergaard. From the autumn of 2010, CPN Tools is transferred to the AIS group, Eindhoven University of Technology, The Netherlands.
+    </description>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
