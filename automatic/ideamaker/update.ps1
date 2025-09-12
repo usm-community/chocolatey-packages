@@ -27,7 +27,8 @@ function global:au_GetLatest {
         "Upgrade-Insecure-Requests" = "1"
     }
 
-    $release_links = $download_page.links | Where-Object href -Match 'install_ideaMaker_(?<version>[\d\.]+)\.exe$' | Where-Object href -NotMatch 'beta'
+    $url = $download_page.Links | Where-Object href -Match 'install_ideaMaker_(?<version>[\d\.]+).exe$' | Select-Object -First 1 -ExpandProperty href
+    $version = $Matches.version
 
     return @{
         Version = $version
