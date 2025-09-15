@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module Wormies-AU-Helpers
 
 $releases = 'http://gretl.sourceforge.net/win32/'
 
@@ -25,10 +26,13 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
-    $url64 = $download_page.links | Where-Object href -Match 'gretl-(.*)-64.exe$' | Select-Object -First 1 -ExpandProperty href
+    $captured_url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
+    $captured_url64 = $download_page.links | Where-Object href -Match 'gretl-(.*)-64.exe$' | Select-Object -First 1 -ExpandProperty href
 
-    $($download_page.RawContent).Split("`n") | Where-Object { $_ -Match "<td><p>latest release\s+\((?<releasedate>\w+\s+\d+,\s+\d{4})\)</p></td>"}| Select-Object -First 1
+    $url32 = Get-RedirectedUrl $captured_url32
+    $url64 = Get-RedirectedUrl $captured_url64
+
+    $($download_page.RawContent).Split("`n") | Where-Object { $_ -Match "<td><p>latest release\s+\((?<releasedate>\w+\s+\d+,\s+\d{4})\)</p></td>" } | Select-Object -First 1
     if ($Matches.releasedate -ne '') {
         $cleanDate = $Matches.releasedate -replace '\s+', ' '
         $cleanDate = $cleanDate.Trim()
