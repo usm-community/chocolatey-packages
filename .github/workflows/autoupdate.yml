@@ -16,11 +16,6 @@ jobs:
     permissions:
       contents: write  # push commits to a repository
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-          token: ${{ secrets.TOKEN }}
       - name: Install dependencies
         shell: bash
         run: |
@@ -29,13 +24,19 @@ jobs:
           wget -q https://github.com/PowerShell/PowerShell/releases/download/v7.2.22/powershell-lts_7.2.22-1.deb_amd64.deb
           dpkg -i powershell-lts_7.2.22-1.deb_amd64.deb
           rm powershell-lts_7.2.22-1.deb_amd64.deb
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.TOKEN }}
+          set-safe-directory: true
       - name: Configure Git
         shell: bash
         run: |
+          git config --global --add safe.directory $(pwd)
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
-          git config --global --add safe.directory $(realpath .)
           echo "Current directory: $(pwd)"
           echo "Directory contents:"
           ls -la
