@@ -30,10 +30,11 @@ jobs:
       - name: Configure Git
         shell: bash
         run: |
-          git config --global --add safe.directory $(realpath .)
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
+          git config --global --add safe.directory $(realpath .)
+          ls -la
       - name: Check a build environment
         shell: bash
         run: |
@@ -62,7 +63,7 @@ jobs:
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
           github_api_key: ${{ secrets.TOKEN }}
-
+          GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
           # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
           # Optional, leave empty to create anonymous gist
           gist_id:
