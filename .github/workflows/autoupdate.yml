@@ -37,6 +37,8 @@ jobs:
           git config --global user.name "overag3"
           git config --global user.email "nicolas.rogier@univ-lorraine.fr"
           git config --global core.safecrlf false
+          git config --global credential.helper store
+          echo "https://overag3:${{ secrets.TOKEN }}@github.com" > ~/.git-credentials
           echo "Current directory: $(pwd)"
           echo "Directory contents:"
           ls -la
