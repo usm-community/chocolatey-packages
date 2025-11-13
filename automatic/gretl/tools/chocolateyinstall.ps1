@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url = 'http://netix.dl.sourceforge.net/project/gretl/gretl/2025b/gretl-2025b-32.exe?viasf=1'
-$url64 = 'http://deac-riga.dl.sourceforge.net/project/gretl/gretl/2025b/gretl-2025b-64.exe?viasf=1'
+$url = 'http://phoenixnap.dl.sourceforge.net/project/gretl/gretl/2025c/gretl-2025c-32.exe?viasf=1'
+$url64 = 'http://psychz.dl.sourceforge.net/project/gretl/gretl/2025c/gretl-2025c-64.exe?viasf=1'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -9,9 +9,9 @@ $packageArgs = @{
   url            = $url
   url64bit       = $url64
   softwareName   = 'gretl*'
-  checksum       = '383dc045cf5ac0309beef82d1e70e476587a42ad3bd1d8923d85970d37da7b2e'
+  checksum       = '327aac98c3a60f0ab5e4f58eb363e42b3595184fced546a51632ca57be634e28'
   checksumType   = 'sha256'
-  checksum64     = '01d0ff70f00e57c1d4045d0eb0bdf98ad524755db2e561a8bef7dbc0c3aee629'
+  checksum64     = '6e50af8b9ec003169f9fd3369280120bb41d81807b1b006ed65bfdbfb802dfeb'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
