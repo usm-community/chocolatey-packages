@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ltspice</id>
-    <version>24.1.10.4</version>
+    <version>26.0.0.3</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ltspice</packageSourceUrl>
     <owners>USM Team</owners>
     <!-- =============================== -->
