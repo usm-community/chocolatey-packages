@@ -13,7 +13,7 @@
     <title>GoldenCheetah</title>
     <authors>GoldenCheetah contributors</authors>
     <projectUrl>https://www.goldencheetah.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/goldencheetah.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@0134bd7e39f753f267bafbd77de781cca0f02be9/icons/goldencheetah.png</iconUrl>
     <projectSourceUrl>https://github.com/GoldenCheetah/GoldenCheetah</projectSourceUrl>
     <docsUrl>https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Main-Page_Users-Guide</docsUrl>
     <mailingListUrl>http://groups.google.com/forum/?fromgroups=#forum/golden-cheetah-users</mailingListUrl>
