@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>goldencheetah</id>
+    <version>3.7</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/goldencheetah</packageSourceUrl>
+    <owners>overage</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>GoldenCheetah</title>
+    <authors>GoldenCheetah contributors</authors>
+    <projectUrl>https://www.goldencheetah.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@master/icons/goldencheetah.png</iconUrl>
+    <projectSourceUrl>https://github.com/GoldenCheetah/GoldenCheetah</projectSourceUrl>
+    <docsUrl>https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Main-Page_Users-Guide</docsUrl>
+    <mailingListUrl>http://groups.google.com/forum/?fromgroups=#forum/golden-cheetah-users</mailingListUrl>
+    <bugTrackerUrl>http://www.github.com/GoldenCheetah/GoldenCheetah/issues</bugTrackerUrl>
+    <tags>goldencheetah cycling training</tags>
+    <summary>GoldenCheetah is an open-source data analysis tool primarily written in C++ with Qt for cyclists and triathletes with support for training as well.</summary>
+    <description><![CDATA[GoldenCheetah is an open-source data analysis tool primarily written in C++ with Qt for cyclists and triathletes with support for training as well.  
+GoldenCheetah can connect with indoor trainers and cycling equipment such as cycling computers and power meters to import data.  
+In addition, GoldenCheetah can connect to cloud services.  
+It can then manipulate and view the data, as well as analyze it.
+]]></description>
+    <releaseNotes>http://www.goldencheetah.org/RELEASE/release-notes.html</releaseNotes>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
