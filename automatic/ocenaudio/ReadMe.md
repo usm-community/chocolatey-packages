@@ -1,6 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio/ocenaudio.png" width="48" height="48"/> [Ocenaudio](https://chocolatey.org/packages/ocenaudio)
-
-## Features
+﻿## Features
 ### VST plugins support
 ocenaudio supports VST (Virtual Studio Technology) plugins, giving its users access to numerous effects. Like the native effects, VST effects can use real-time preview to aide configuration.
 
@@ -29,4 +27,4 @@ Besides offering an incredible waveform view of your audio files, ocenaudio has 
 
 Advanced users will be surprised to find that the spectrogram settings are applied in real time. The display is updated immediately when altering features such as the number of frequency bands, window type and size and dynamic range of the display.
 
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/automatic/ocenaudio/screenshot.png)
