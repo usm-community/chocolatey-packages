@@ -1,6 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio.install/ocenaudio.install.png" width="48" height="48"/> [Ocenaudio (Install)](https://chocolatey.org/packages/ocenaudio.install)
-
-## Features
+﻿## Features
 ### VST plugins support
 ocenaudio supports VST (Virtual Studio Technology) plugins, giving its users access to numerous effects. Like the native effects, VST effects can use real-time preview to aide configuration.
 
