@@ -18,7 +18,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 
     $url = $download_page.Links | Where-Object href -Match 'install_ideaMaker_(?<version>[\d\.]+).exe$' | Select-Object -First 1 -ExpandProperty href
     $version = $Matches.version
@@ -28,7 +28,7 @@ function global:au_GetLatest {
         URL32   = $url
         Options = @{
             Headers = @{
-                "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+                "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
             }
         }
     }
