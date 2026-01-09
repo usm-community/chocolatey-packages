@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ocenaudio</id>
-    <version>3.16.5</version>
+    <version>3.17.0</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ocenaudio</packageSourceUrl>
     <owners>chtof, usm</owners>
     <title>Ocenaudio</title>
@@ -51,7 +51,7 @@ Advanced users will be surprised to find that the spectrogram settings are appli
 ![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio/screenshot.png)
 ]]></description>
   <dependencies>
-    <dependency id="ocenaudio.install" version="[3.16.5]" />
+    <dependency id="ocenaudio.install" version="[3.17.0]" />
   </dependencies>
   </metadata>
   <files></files>
