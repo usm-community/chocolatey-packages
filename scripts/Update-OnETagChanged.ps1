@@ -11,6 +11,7 @@ function Update-OnETagChanged() {
   )
 
   $request = [System.Net.WebRequest]::CreateDefault($execUrl)
+  $request.UserAgent = "Chocolatey AU Package Updater"
 
   try {
     $response = $request.GetResponse()
