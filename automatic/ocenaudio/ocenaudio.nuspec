@@ -48,7 +48,7 @@ Besides offering an incredible waveform view of your audio files, ocenaudio has 
 
 Advanced users will be surprised to find that the spectrogram settings are applied in real time. The display is updated immediately when altering features such as the number of frequency bands, window type and size and dynamic range of the display.
 
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/automatic/ocenaudio/screenshot.png)
 ]]></description>
   <dependencies>
     <dependency id="ocenaudio.install" version="[3.17.0]" />
