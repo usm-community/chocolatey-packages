@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ocenaudio.install</id>
-    <version>3.16.5</version>
+    <version>3.17.0</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ocenaudio.install</packageSourceUrl>
     <owners>chtof, usm</owners>
     <title>Ocenaudio (Install)</title>
