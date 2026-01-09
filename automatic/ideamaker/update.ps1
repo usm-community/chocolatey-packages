@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Headers $Latest.Options.Headers
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Headers $Latest.Options.Headers 
 }
 
 function global:au_GetLatest {
@@ -29,6 +29,8 @@ function global:au_GetLatest {
         Options = @{
             Headers = @{
                 "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                "Referer"    = "https://www.raise3d.com/download/ideamaker-all-versions/"
+                "Origin"     = "https://www.raise3d.com"
             }
         }
     }
