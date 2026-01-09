@@ -21,9 +21,9 @@ jobs:
         run: |
           apt-get update
           apt-get install -y git wget p7zip-full msitools libimage-exiftool-perl
-          wget -q https://github.com/PowerShell/PowerShell/releases/download/v7.2.22/powershell-lts_7.2.22-1.deb_amd64.deb
-          dpkg -i powershell-lts_7.2.22-1.deb_amd64.deb
-          rm powershell-lts_7.2.22-1.deb_amd64.deb
+          wget -q https://github.com/PowerShell/PowerShell/releases/download/v7.4.13/powershell-lts_7.4.13-1.deb_amd64.deb
+          dpkg -i powershell-lts_7.4.13-1.deb_amd64.deb
+          rm powershell-lts_7.4.13-1.deb_amd64.deb
       - uses: actions/checkout@v5
         with:
           ref: main
