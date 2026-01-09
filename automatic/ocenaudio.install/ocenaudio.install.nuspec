@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ocenaudio.install</id>
-    <version>3.16.5</version>
+    <version>3.17</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/ocenaudio.install</packageSourceUrl>
     <owners>chtof, usm</owners>
     <title>Ocenaudio (Install)</title>
@@ -19,9 +19,7 @@
     <bugTrackerUrl>https://www.ocenaudio.com/feedback</bugTrackerUrl>
     <tags>ocenaudio.install audio editor</tags>
     <summary>ocenaudio is a cross-platform, easy to use, fast and functional audio editor.</summary>
-    <description><![CDATA[## Features
-### VST plugins support
-ocenaudio supports VST (Virtual Studio Technology) plugins, giving its users access to numerous effects. Like the native effects, VST effects can use real-time preview to aide configuration.
+    <description><![CDATA[ocenaudio supports VST (Virtual Studio Technology) plugins, giving its users access to numerous effects. Like the native effects, VST effects can use real-time preview to aide configuration.
 
 ### Real-time preview of effects
 Applying effects such as EQ, gain and filtering is an important part of audio editing. However, it is very tricky to get the desired result by adjusting the controls configuration alone: you must listen the processed audio. To ease the configuration of audio effects, ocenaudio has a real time preview feature: you hear the processed signal while adjusting the controls.
@@ -48,7 +46,7 @@ Besides offering an incredible waveform view of your audio files, ocenaudio has 
 
 Advanced users will be surprised to find that the spectrogram settings are applied in real time. The display is updated immediately when altering features such as the number of frequency bands, window type and size and dynamic range of the display.
 
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/ocenaudio.install/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/automatic/ocenaudio.install/screenshot.png)
 ]]></description>
   </metadata>
   <files>
