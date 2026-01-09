@@ -15,6 +15,9 @@ function GetResultInformation([string]$url64) {
 
   $checksumType = 'sha256'
 
+  $version = (Get-ExeInfo -Path $dest)."Product Version"
+  Write-Output "Version: $version"
+
   $result = @{
     URL64          = $url64
     Version        = (Get-ExeInfo -Path $dest)."Product Version"
