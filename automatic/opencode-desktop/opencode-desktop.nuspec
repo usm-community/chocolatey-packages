@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+
+    <id>opencode-desktop</id>
+    <version>1.1.14</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/opencode-desktop</packageSourceUrl>
+    <owners>overage, usm</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>OpenCode Desktop</title>
+    <authors>Anomaly</authors>
+    <projectUrl>https://opencode.ai</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@main/icons/opencode-desktop.png</iconUrl>
+    <copyright>2026 Anomaly</copyright>
+    <licenseUrl>https://github.com/anomalyco/opencode/blob/main/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/anomalyco/opencode</projectSourceUrl>
+    <docsUrl>https://opencode.ai/docs</docsUrl>
+    <mailingListUrl>https://opencode.ai/discord</mailingListUrl>
+    <bugTrackerUrl>https://github.com/anomalyco/opencode/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>OpenCode Desktop - Open source AI coding agent with 75+ LLM support and privacy-focused approach</summary>
+    <tags>opencode ai coding desktop</tags>
+    <description><![CDATA[OpenCode Desktop is the beta desktop application for OpenCode, an open-source AI coding agent designed to assist developers in writing code efficiently across various environments, including terminals, IDEs, and now desktop applications.
+
+## Features
+
+- **LSP Enabled**: Automatically loads and integrates the right Language Server Protocols (LSPs) for optimal AI assistance.
+- **Multi-Session Support**: Start multiple AI agents in parallel on the same project for concurrent tasks.
+- **Share Links**: Generate shareable links for sessions, references, or debugging purposes.
+- **Claude Pro Integration**: Log in with Anthropic to access Claude Pro or Max accounts.
+- **Any Model Support**: Connect to 75+ LLM providers through Models.dev, including Claude, GPT, Gemini, and local models.
+- **Any Editor Compatibility**: Available as a terminal interface, desktop app, and IDE extensions for VS Code, Cursor, Zed, Windsurf, and VSCodium.
+- **Privacy First**: Operates in privacy-sensitive environments without storing code or context data.
+- **Open Source**: Fully open-source with over 50,000 GitHub stars and contributions from 500+ developers.
+
+## Usage
+
+After installation, launch OpenCode Desktop from your applications menu. Connect your preferred AI models and start coding with AI assistance.
+
+For more details, visit the [official documentation](https://opencode.ai/docs).
+
+## Contributing
+
+OpenCode is open-source. Contributions are welcome! Check out the [GitHub repository](https://github.com/anomalyco/opencode) for issues and pull requests.
+
+## License
+
+Licensed under the same terms as OpenCode. See [LICENSE](https://github.com/anomalyco/opencode/blob/main/LICENSE).
+
+## Beta Notice
+
+This is a beta version. Features may change, and stability is not guaranteed. Report issues on GitHub.
+]]></description>
+  </metadata>
+  <!-- =============================== -->
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
