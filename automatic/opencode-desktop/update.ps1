@@ -1,5 +1,6 @@
 Import-Module Chocolatey-AU
-Import-Module ([System.IO.Path]::Combine($env:ChocolateyInstall, 'helpers', 'chocolateyInstaller.psm1'))
+
+$releases = 'https://api.github.com/repos/anomalyco/opencode/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -10,29 +11,21 @@ function global:au_SearchReplace {
     }
 }
 
-function GetResultInformation([string]$url64) {
-    $dest = Join-Path $([System.IO.Path]::GetTempPath()) 'opencode-desktop.exe'
-    Get-WebFile $url64 $dest | Out-Null
-
-    $checksumType = 'sha256'
-    $result = @{
-        URL64      = $url64
-        Version    = (Get-ExeInfo -Path $dest)."Product Version"
-        Checksum64 = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
-    }
-    Remove-Item -Force $dest -ErrorAction SilentlyContinue
-
-    return $result
+function global:au_BeforeUpdate {
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
 }
 
 function global:au_GetLatest {
-    $url64 = 'https://opencode.ai/download/windows-x64-nsis'
+    $latest_asset = (Invoke-RestMethod -Uri $releases).assets
 
-    $result = Update-OnETagChanged -execUrl $url64 -OnETagChanged {
-        GetResultInformation $url64
-    } -OnUpdated { @{ URL64 = $url64 } }
+    $url = $latest_asset | Where-Object browser_download_url -Match 'opencode-desktop-windows-x64.exe' | Select-Object -First 1 -ExpandProperty browser_download_url
+    $version = Get-Version $url
 
-    return $result
+    return @{
+        Version = $version
+        URL64   = $url
+    }
+
 }
 
 update -ChecksumFor none
