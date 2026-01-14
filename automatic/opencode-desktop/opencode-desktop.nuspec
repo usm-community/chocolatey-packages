@@ -14,7 +14,7 @@
     <projectUrl>https://opencode.ai</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages@main/icons/opencode-desktop.png</iconUrl>
     <copyright>2026 Anomaly</copyright>
-    <licenseUrl>https://github.com/anomalyco/opencode/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/anomalyco/opencode/blob/HEAD/LICENSE</licenseUrl>
     <projectSourceUrl>https://github.com/anomalyco/opencode</projectSourceUrl>
     <docsUrl>https://opencode.ai/docs</docsUrl>
     <mailingListUrl>https://opencode.ai/discord</mailingListUrl>

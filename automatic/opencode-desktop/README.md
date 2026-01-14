@@ -25,7 +25,7 @@ OpenCode is open-source. Contributions are welcome! Check out the [GitHub reposi
 
 ## License
 
-Licensed under the same terms as OpenCode. See [LICENSE](https://github.com/anomalyco/opencode/blob/main/LICENSE).
+Licensed under the same terms as OpenCode. See [LICENSE](https://github.com/anomalyco/opencode/blob/HEAD/LICENSE).
 
 ## Beta Notice
 

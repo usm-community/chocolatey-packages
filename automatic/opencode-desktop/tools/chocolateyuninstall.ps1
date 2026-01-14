@@ -1,7 +1,8 @@
 $ErrorActionPreference = 'Stop'
+
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  softwareName   = 'OpenCode Desktop*'
+  softwareName   = 'OpenCode*'
   fileType       = 'EXE'
   silentArgs     = '/S'
   validExitCodes = @(0)
