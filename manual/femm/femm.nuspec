@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>femm</id>
+    <version>4.2.20260128</version>
+    <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/manual/femm</packageSourceUrl>
+    <owners>overage, gfe</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>FEMM</title>
+    <authors>David Meeker</authors>
+    <projectUrl>http://www.femm.info/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/usm-community/chocolatey-packages/icons/femm.png</iconUrl>
+    <docsUrl>http://www.femm.info/wiki/Documentation/</docsUrl>
+    <mailingListUrl>https://groups.io/g/femm/</mailingListUrl>
+    <tags>femm solver finite element</tags>
+    <summary>A Windows finite element solver for 2D and axisymmetric magnetic, electrostatic, heat flow, and current flow problems with graphical pre- and post-processors.</summary>
+    <description>
+FEMM is a suite of programs for solving low frequency electromagnetic problems on two-dimensionalplanar and axisymmetric domains.  
+The program currently addresses linear/nonlinear magneto-static problems, linear/nonlinear time harmonic magneticproblems, linear electrostatic problems,and steady-state heat flow problems.
+    </description>
+    <releaseNotes>http://www.femm.info/wiki/ReadMe42</releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
