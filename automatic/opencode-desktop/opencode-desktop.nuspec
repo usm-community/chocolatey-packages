@@ -3,7 +3,7 @@
   <metadata>
 
     <id>opencode-desktop</id>
-    <version>1.1.65</version>
+    <version>1.2.3</version>
     <packageSourceUrl>https://github.com/usm-community/chocolatey-packages/tree/main/automatic/opencode-desktop</packageSourceUrl>
     <owners>overage, usm</owners>
     <!-- ============================== -->
