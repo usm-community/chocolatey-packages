@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'msi'
-  url64         = 'https://github.com/glpi-project/glpi-agent/releases/download/1.16/GLPI-Agent-1.16-x64.msi'
-  checksum64    = '1210c10dfc9921f28f591a3352d8f6ef898c737980db833773ff8cda5681be90'
+  url64         = 'https://github.com/glpi-project/glpi-agent/releases/download/1.17/GLPI-Agent-1.17-x64.msi'
+  checksum64    = 'db2661a14359931a2d14ed7268f9b90763da4f2bec97b5ed8d51b9bb655d730c'
   checksumType64= 'sha256' 
   silentArgs    = '/quiet'
   validExitCodes= @(0, 3010, 1641)
