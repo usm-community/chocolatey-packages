@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.22.2/Rancher.Desktop.Setup.1.22.2.msi'
+$url = 'https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.22.3/Rancher.Desktop.Setup.1.22.3.msi'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
   url            = $url
   softwareName   = 'Rancher Desktop*'
-  checksum       = 'faa4505ddaf1e33416b5069de5197ef148cf2e6d53747973f5090c2625e16282'
+  checksum       = 'd0918c3e99d2918d84d739e47df12964b2d75ccdf3f9da769b6d4b47ede187cf'
   checksumType   = 'sha256'
   silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0, 3010, 1641)
