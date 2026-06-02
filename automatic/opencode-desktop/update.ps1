@@ -18,7 +18,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     $latest_asset = (Invoke-RestMethod -Uri $releases).assets
 
-    $url = $latest_asset | Where-Object browser_download_url -Match 'opencode-desktop-windows-x64.exe' | Select-Object -First 1 -ExpandProperty browser_download_url
+    $url = $latest_asset | Where-Object browser_download_url -Match 'opencode-desktop-win-x64.exe' | Select-Object -First 1 -ExpandProperty browser_download_url
     $version = Get-Version $url
 
     return @{
