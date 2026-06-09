@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url64 = 'https://github.com/FreeFem/FreeFem-sources/releases/download/v4.016/FreeFEM-4.016-amd64-win64.exe'
+$url64 = 'https://github.com/FreeFem/FreeFem-sources/releases/download/v4.16/FreeFEM-4.16-amd64-win64.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
