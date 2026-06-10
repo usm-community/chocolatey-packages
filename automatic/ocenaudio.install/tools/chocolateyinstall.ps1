@@ -3,7 +3,7 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.exe'
-  checksum64     = 'E78DEC61F36D4F27CC1E6A4D03E622CC29B827DFF92AB6E1CAC3DE9E5D5D21F6'
+  checksum64     = 'ACCDBACCBFF4BC78BC64A9B991A5CC5ED5BB4FDF27779808C7A48ACD4587CE16'
   checksumType64 = 'sha256'
   silentArgs     = "/allusers /S"
 }
