@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://www.femm.info/wiki/Files/files.xml?action=download&file=femm42bin_win32_21Apr2019.exe'
-$url64 = 'https://www.femm.info/wiki/Files/files.xml?action=download&file=femm42bin_x64_21Apr2019.exe'
+$url = 'https://www.femm.info/doku/lib/exe/fetch.php?media=upload:files:femm42bin_win32_21apr2019.exe'
+$url64 = 'https://www.femm.info/doku/lib/exe/fetch.php?media=upload:files:femm42bin_x64_21apr2019.exe'
 $version = 'femm 4.2 21Apr2019'
 
 $packageArgs = @{
