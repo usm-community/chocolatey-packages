@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url = 'https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-desktop-win-x64.exe'
+$url = 'https://github.com/anomalyco/opencode/releases/download/v1.18.29/opencode-desktop-win-x64.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url64bit       = $url
   softwareName   = 'OpenCode*'
-  checksum64     = 'ed8900cc123db67ac9714c1a3051436eced0d7190c709ae53fea1e99f3dcca6c'
+  checksum64     = '2914250df02bb911fcfb799715e3d2e13ab8cc748143406a7be099fde6820a20'
   checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
