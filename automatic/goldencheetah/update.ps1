@@ -5,9 +5,8 @@ $releases = 'https://api.github.com/repos/GoldenCheetah/GoldenCheetah/releases/l
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(?i)(^\s*packageName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)'"
-            "(^[$]url64\s*=\s*)('.*')"           = "`$1'$($Latest.URL64)'"
-            "(^\s*checksum64\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum64)'"
+            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+            "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -17,10 +16,16 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $latest_asset = (Invoke-RestMethod -Uri $releases).assets
+    $release = Invoke-RestMethod -Uri $releases
 
-    $url64 = $latest_asset | Where-Object browser_download_url -match 'GoldenCheetah_v.*_x64.exe' | Select-Object -First 1 -ExpandProperty browser_download_url
-    $version = Get-Version $url64
+    # since 3.7 SP1 the Windows assets are suffixed with the Qt version (..._x64Qt6.exe)
+    $exes = $release.assets.browser_download_url | Where-Object { $_ -match 'GoldenCheetah_v.*_x64.*\.exe$' }
+    $url64 = $exes | Where-Object { $_ -match 'Qt6' } | Select-Object -First 1
+    if (-not $url64) { $url64 = $exes | Select-Object -First 1 }
+    if (-not $url64) { throw "No 64-bit Windows installer found in release '$($release.tag_name)'" }
+
+    # tags look like 'v3.7' or 'v3.7-SP1'; a service pack becomes a 3rd part (3.7 -> 3.7.1)
+    $version = Get-Version ($release.tag_name -replace '^v', '' -replace '-SP(\d+)$', '.$1')
 
     return @{
         Version = $version

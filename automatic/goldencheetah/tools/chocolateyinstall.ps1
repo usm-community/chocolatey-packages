@@ -2,7 +2,7 @@
 $url64 = 'https://github.com/GoldenCheetah/GoldenCheetah/releases/download/v3.7-SP1/GoldenCheetah_v3.7-sp1_x64Qt6.exe'
 
 $packageArgs = @{
-  packageName    = 'usm-goldencheetah'
+  packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url64bit       = $url64
   softwareName   = 'goldencheetah*'
