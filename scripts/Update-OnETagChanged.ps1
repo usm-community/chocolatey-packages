@@ -44,7 +44,11 @@ function Update-OnETagChanged() {
 
   if ($saveResult) {
     $result["ETAG"] = $etag
-    "$($result["ETAG"])|$($result["Version"])" | Out-File $saveFile -Encoding utf8 -NoNewline
+    # Write through a temporary file: sibling packages can share one cache file
+    # and run in parallel, so a reader must never see a half-written line.
+    $tempFile = "$saveFile.$([guid]::NewGuid().ToString('N')).tmp"
+    "$($result["ETAG"])|$($result["Version"])" | Out-File $tempFile -Encoding utf8 -NoNewline
+    Move-Item -LiteralPath $tempFile -Destination $saveFile -Force
   }
 
   return $result
