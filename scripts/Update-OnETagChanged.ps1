@@ -46,7 +46,7 @@ function Update-OnETagChanged() {
     $result["ETAG"] = $etag
     # Write through a temporary file: sibling packages can share one cache file
     # and run in parallel, so a reader must never see a half-written line.
-    $tempFile = "$saveFile.$([guid]::NewGuid().ToString('N')).tmp"
+    $tempFile = "$saveFile.$(Split-Path -Leaf $PWD).tmp"
     "$($result["ETAG"])|$($result["Version"])" | Out-File $tempFile -Encoding utf8 -NoNewline
     Move-Item -LiteralPath $tempFile -Destination $saveFile -Force
   }

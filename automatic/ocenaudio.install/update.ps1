@@ -10,10 +10,12 @@ function global:au_SearchReplace {
   }
 }
 function GetResultInformation([string]$url64) {
-  # Unique file name: ocenaudio and ocenaudio.install share this updater and are
-  # processed in parallel by AU, so a fixed name makes both packages download to
-  # (and delete) the same path, and the loser reads a missing/partial file.
-  $dest = Join-Path $([System.IO.Path]::GetTempPath()) "ocenaudio_windows64_$([guid]::NewGuid().ToString('N')).exe"
+  # Suffix the temp file with the package directory (AU runs each updater from
+  # its own package folder): ocenaudio and ocenaudio.install share this updater
+  # and are processed in parallel, so a single fixed path would make both
+  # download to - and delete - the same file, the loser reading a missing one.
+  # Local scratch file only; the URL written into the package is untouched.
+  $dest = Join-Path $([System.IO.Path]::GetTempPath()) "ocenaudio_windows64_$(Split-Path -Leaf $PWD).exe"
   Get-WebFile $url64 $dest | Out-Null
 
   $checksumType = 'sha256'
