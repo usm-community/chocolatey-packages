@@ -56,6 +56,31 @@ jobs:
           Install-Module -Name Chocolatey-AU -Force -Repository PSGallery
           Install-Module -Name Wormies-AU-Helpers -Force
           Install-Module -Name AngleParse -Force
+      # Chocolatey-AU 1.0.0 (2024-03-11) is the only version on PSGallery and predates
+      # the upstream fix for the PowerShell 7.3+ argument-passing change: Push-Package
+      # sets $force_push = '' when au_ForcePush is unset, and PS >= 7.3 forwards that
+      # empty string to `choco push` as "" instead of dropping it. choco joins its
+      # positional arguments, looks for "<pkg>.nupkg " (trailing space) and fails with
+      # "File specified is either not found or not a .nupkg file".
+      # Upstream fix (chocolatey-au PR #85, merged to develop 2026-01-18) uses $null.
+      # Drop this step once a Chocolatey-AU newer than 1.0.0 is published.
+      - name: Patch Chocolatey-AU for PowerShell 7.3+ (upstream PR 85, unreleased)
+        shell: pwsh
+        run: |
+          $file = Join-Path (Get-Module -ListAvailable Chocolatey-AU |
+                             Sort-Object Version -Descending |
+                             Select-Object -First 1).ModuleBase 'Public/Push-Package.ps1'
+          $content = Get-Content $file -Raw
+          if ($content -match [regex]::Escape('else { $null }')) {
+              Write-Host "Chocolatey-AU already carries the fix - this step can be removed."
+              return
+          }
+          $patched = $content.Replace("else { '' }", 'else { $null }')
+          if ($patched -eq $content) {
+              throw "Could not patch $file - Push-Package.ps1 no longer has the expected shape."
+          }
+          Set-Content -Path $file -Value $patched -NoNewline
+          Write-Host "Patched $file"
       - name: Check install of modules
         shell: pwsh
         run: |
