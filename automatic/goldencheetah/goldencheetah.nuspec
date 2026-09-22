@@ -18,6 +18,7 @@
     <docsUrl>https://github.com/GoldenCheetah/GoldenCheetah/wiki/UG_Main-Page_Users-Guide</docsUrl>
     <mailingListUrl>http://groups.google.com/forum/?fromgroups=#forum/golden-cheetah-users</mailingListUrl>
     <bugTrackerUrl>http://www.github.com/GoldenCheetah/GoldenCheetah/issues</bugTrackerUrl>
+    <copyright>Copyright (c) GoldenCheetah contributors</copyright>
     <tags>goldencheetah cycling training</tags>
     <summary>GoldenCheetah is an open-source data analysis tool primarily written in C++ with Qt for cyclists and triathletes with support for training as well.</summary>
     <description><![CDATA[GoldenCheetah is a desktop application for cyclists and triathletes and coaches
