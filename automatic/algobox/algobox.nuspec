@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>algobox</id>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <title>Algobox</title>
     <authors>Pascal Brachet - Lycée Bernard Palissy d'Agen</authors>
     <owners>gfe, overage</owners>
