@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url = 'http://cfhcable.dl.sourceforge.net/project/gretl/gretl/2026b/gretl-2026b-32.exe?viasf=1&fid=4945960760fc51cd'
-$url64 = 'http://pilotfiber.dl.sourceforge.net/project/gretl/gretl/2026b/gretl-2026b-64.exe?viasf=1&fid=38c2d405e4c4ee8e'
+$url = 'http://cytranet.dl.sourceforge.net/project/gretl/gretl/2026d/gretl-2026d-32.exe?viasf=1&fid=fd8f95a98ef9fd6b&e=1793418174&st=657vF7i5bmY7t5OcyjON_g'
+$url64 = 'http://psychz.dl.sourceforge.net/project/gretl/gretl/2026d/gretl-2026d-64.exe?viasf=1&fid=44f629ddd5edc297&e=1793418175&st=Kw11Blh0C1PyqitxtRaAYA'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -9,9 +9,9 @@ $packageArgs = @{
   url            = $url
   url64bit       = $url64
   softwareName   = 'gretl*'
-  checksum       = '9f7638bd5a02a5e5400b0319ec9772aad4bfa4857e50cc653c56f0e7675afd42'
+  checksum       = '1daa5e4c415fd27e3bb9024018d4e5f744ff27c0de94031a5acf94e59a74b083'
   checksumType   = 'sha256'
-  checksum64     = '236d0079cca4475023dd6ec665de5f6689e918adca795cf73ac146a1d5aa7dc3'
+  checksum64     = 'e9d70629912bf1470e7e1540f5a2c9418e9afcbfb1c62b57830c913ac176c716'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)

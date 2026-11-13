@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64 = 'https://github.com/arduino/arduino-ide/releases/download/2.3.10/arduino-ide_2.3.10_Windows_64bit.zip'
-$version = '2.3.10'
+$url64 = 'https://github.com/arduino/arduino-ide/releases/download/2.3.11/arduino-ide_2.3.11_Windows_64bit.zip'
+$version = '2.3.11'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$($env:ProgramFiles)\Arduino IDE"
   url64          = $url64
-  checksum64     = '5dd9d6b2e2c9ef8dd9d98da7808f712daff97911a91d3ccfaf946355c6b6abb3'
+  checksum64     = 'c52f6bb6ae8ca511875d28b76d552c835a2f8c4dc0ef823614e0a107021a0544'
   checksumType64 = 'sha256'
 }
 
